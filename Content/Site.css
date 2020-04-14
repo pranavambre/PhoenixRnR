@@ -1,0 +1,433 @@
+﻿body {
+    font-family: "Overpass", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background: #fff;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 300;
+    color: #555555;
+}
+/* Set padding to keep content from hitting the edges */
+
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+
+
+/* Set width on the form input elements since they're 100% wide by default */
+
+
+a {
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+    color: #f7ca44;
+}
+
+    a:hover {
+        text-decoration: none;
+        color: #f7ca44;
+    }
+
+    a.link-underline {
+        text-decoration: underline;
+    }
+
+        a.link-underline:hover {
+            text-decoration: none;
+        }
+
+
+
+.ftco-navbar-light {
+    background: transparent !important;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    top: 10px;
+}
+
+@media (max-width: 991.98px) {
+    .ftco-navbar-light {
+        background: #000 !important;
+        top: 0;
+        position: relative;
+    }
+}
+
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+    font-size: 14px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #f0f0f0;
+    opacity: 1 !important;
+}
+
+    .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
+        color: #fff;
+    }
+
+@media (max-width: 991.98px) {
+    .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+.ftco-navbar-light .navbar-nav > .nav-item.ftco-seperator {
+    position: relative;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+@media (max-width: 991.98px) {
+    .ftco-navbar-light .navbar-nav > .nav-item.ftco-seperator {
+        padding-left: 0;
+        margin-left: 0;
+    }
+}
+
+.ftco-navbar-light .navbar-nav > .nav-item.ftco-seperator:before {
+    position: absolute;
+    content: "";
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    width: 2px;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 991.98px) {
+    .ftco-navbar-light .navbar-nav > .nav-item.ftco-seperator:before {
+        display: none;
+    }
+}
+
+.ftco-navbar-light .navbar-nav > .nav-item.cta > a {
+    padding-left: 0;
+    color: #fff;
+}
+
+    .ftco-navbar-light .navbar-nav > .nav-item.cta > a span {
+        border: 2px solid #fff;
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: 4px;
+    }
+
+.ftco-navbar-light .navbar-nav > .nav-item.cta.cta-colored span {
+    border-color: #f7ca44;
+}
+
+.ftco-navbar-light .navbar-nav > .nav-item.active > a {
+    color: #fff;
+    position: relative;
+}
+
+    .ftco-navbar-light .navbar-nav > .nav-item.active > a:before {
+        content: "";
+        height: 2px;
+        background: #fff;
+        left: 20px;
+        right: 20px;
+        position: absolute;
+        bottom: 20px;
+    }
+
+@media (max-width: 991.98px) {
+    .ftco-navbar-light .navbar-nav > .nav-item.active > a:before {
+        display: none;
+    }
+}
+
+.ftco-navbar-light .navbar-toggler {
+    border: none;
+    color: rgba(255, 255, 255, 0.5) !important;
+    cursor: pointer;
+    padding-right: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: .1em;
+}
+
+.ftco-navbar-light.scrolled {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin-top: -130px;
+    background: #fff !important;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+    .ftco-navbar-light.scrolled .nav-item.active > a {
+        color: #f7ca44 !important;
+    }
+
+        .ftco-navbar-light.scrolled .nav-item.active > a:before {
+            display: none;
+        }
+
+@media (max-width: 991.98px) {
+    .ftco-navbar-light.scrolled .navbar-nav {
+        background: none;
+        border-radius: 0px;
+        padding-left: 0rem !important;
+        padding-right: 0rem !important;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .ftco-navbar-light.scrolled .navbar-nav {
+        background: none;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
+
+.ftco-navbar-light.scrolled .navbar-toggler {
+    border: none;
+    color: rgba(0, 0, 0, 0.5) !important;
+    border-color: rgba(0, 0, 0, 0.5) !important;
+    cursor: pointer;
+    padding-right: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: .1em;
+}
+
+.ftco-navbar-light.scrolled .nav-link {
+    padding-top: 0.9rem !important;
+    padding-bottom: 0.9rem !important;
+    color: #000 !important;
+}
+
+    .ftco-navbar-light.scrolled .nav-link.active {
+        color: #f7ca44 !important;
+    }
+
+.ftco-navbar-light.scrolled.awake {
+    margin-top: 0px;
+    -webkit-transition: .3s all ease-out;
+    -o-transition: .3s all ease-out;
+    transition: .3s all ease-out;
+}
+
+.ftco-navbar-light.scrolled.sleep {
+    -webkit-transition: .3s all ease-out;
+    -o-transition: .3s all ease-out;
+    transition: .3s all ease-out;
+}
+
+.ftco-navbar-light.scrolled .navbar-brand {
+    color: #000;
+}
+
+.navbar-brand {
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: 30px;
+    font-family: "Overpass", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+
+.block-30 {
+    background-size: cover;
+    background-color: #ccc;
+    padding: 0;
+    position: relative;
+}
+
+@media (max-width: 991.98px) {
+    .block-30 {
+        background-position: center center !important;
+    }
+}
+
+.block-30 .author {
+    margin-top: 30px;
+    font-family: "Overpass", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    display: block;
+}
+
+.block-30:before {
+    background: #000;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .4;
+    z-index: 0;
+}
+
+.block-30.no-overlay:before {
+    display: none;
+}
+
+.block-30, .block-30 .row {
+    min-height: 700px;
+    height: 100vh;
+}
+
+    .block-30 .subheading-sm {
+        margin-bottom: 30px;
+        color: #fff;
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        position: relative;
+        display: inline-block;
+        font-weight: 300;
+    }
+
+        .block-30 .subheading-sm:after {
+            width: 80px;
+            height: 2px;
+            background: #fff;
+            position: absolute;
+            left: 120%;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            content: "";
+        }
+
+    .block-30 .heading {
+        color: #fff;
+        font-size: 40px;
+        line-height: 1.1;
+        margin-bottom: 50px;
+        font-family: "Dosis", sans-serif;
+    }
+
+@media (min-width: 768px) {
+    .block-30 .heading {
+        font-size: 80px;
+    }
+}
+
+@media (min-width: 992px) {
+    .block-30 .heading {
+        font-size: 80px;
+    }
+}
+
+.block-30 .btn {
+    background: #fff;
+    border-radius: 0;
+    border: 2px solid transparent;
+    font-size: 14px;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: #999999;
+    -webkit-box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.2);
+}
+
+    .block-30 .btn:hover {
+        border-color: #fff;
+        color: #fff;
+    }
+
+.block-30.block-30-sm, .block-30.block-30-sm .row {
+    min-height: 700px;
+    height: 70vh;
+}
+
+    .block-30.block-30-sm .heading {
+        font-size: 70px;
+        margin-bottom: 20px;
+    }
+
+.block-30 .lead {
+    color: #fff;
+}
+
+
+.ftco-play-video span {
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+}
+
+.ftco-play-video > .play-icon-wrap {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fff;
+    position: relative;
+    border-radius: 50%;
+}
+
+.ftco-play-video > .play-icon-wrap > span {
+        font-size: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: 2px;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+ }
+
+.ftco-play-video:hover > .play-icon-wrap {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.ftco-play-video:hover span {
+    color: #fff;
+}
+
+
+.border-top {
+    border-top: 1px solid #f2f2f2 !important;
+}
+
+.site-section {
+    padding: 4em 0;
+}
+
+.block-6 .icon {
+    margin-right: 30px;
+    color: #f7ca44;
+}
+
+.block-6 .icon span:before {
+        font-size: 50px;
+ }
+
+    .block-6 .icon span.bg-after:after {
+        position: absolute;
+        content: "";
+        left: 10px;
+        top: 5px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #fbe6a6;
+        z-index: -1;
+    }
+
+.block-6 .media-body .heading {
+    font-size: 18px;
+}
+
+.block-6 .media-body p {
+    color: #a2a2a2;
+}
+
+    .block-6 .media-body p:last-child {
+        margin-bottom: 0;
+    }
