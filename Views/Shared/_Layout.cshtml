@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
+    
     <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,500|Dosis:400,700" rel="stylesheet">
     <link rel="stylesheet" href="~/Content/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="~/Content/animate.css">
@@ -16,6 +17,7 @@
     <link rel="stylesheet" href="~/Content/flaticon.css">
     <link rel="stylesheet" href="~/Content/icomoon.css">
     <link rel="stylesheet" href="~/Content/fancybox.min.css">
+    
 
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
@@ -31,12 +33,12 @@
 
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item active"><a href="~/Views/Home/Index.cshtml" class="nav-link">Home</a></li>
                     <li class="nav-item"><a href="how-it-works.html" class="nav-link">Survival Plan</a></li>
                     <li class="nav-item"><a href="donate.html" class="nav-link">Preparation Checklist</a></li>
                     <li class="nav-item"><a href="gallery.html" class="nav-link">Know about bushfire</a></li>
                     <li class="nav-item"><a href="blog.html" class="nav-link">Quiz</a></li>
-                    <li class="nav-item"><a href="about.html" class="nav-link">Maps</a></li>
+                    <li class="nav-item"><a href="~/Views/Home/About.cshtml" class="nav-link">Maps</a></li>
 
                 </ul>
             </div>
@@ -46,7 +48,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - Phoenix R&R Application</p>
         </footer>
     </div>
 
@@ -57,7 +59,7 @@
     <script src="~/Scripts/aos.js"></script>
 
 
-    
+
     <script src="~/Scripts/jquery-migrate-3.0.1.min.js"></script>
     <script src="~/Scripts/popper.min.js"></script>
 
@@ -73,6 +75,12 @@
     <script src="~/Scripts/jquery.animateNumber.min.js"></script>
 
     <script src="~/Scripts/main.js"></script>
+    
 
+
+    <script src="~/Scripts/jquery-ui.min.js"></script>
+    <script src="~/Scripts/jquery.steps.js"></script>
+    <script src="~/Scripts/py.js"></script>
+    <script src="~/Scripts/hotspot.js"></script>
 </body>
 </html>

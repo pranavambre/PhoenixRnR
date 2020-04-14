@@ -141,9 +141,12 @@
     <Content Include="Content\flaticon.css" />
     <Content Include="Content\icomoon.css" />
     <Content Include="Content\ionicons.min.css" />
+    <Content Include="Content\jquery-ui.min.css" />
     <Content Include="Content\open-iconic-bootstrap.min.css" />
+    <Content Include="Content\opensans-font.css" />
     <Content Include="Content\owl.carousel.min.css" />
     <Content Include="Content\owl.theme.default.min.css" />
+    <Content Include="Content\py.css" />
     <Content Include="Content\_flaticon.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\flaticon\backup.txt" />
@@ -158,6 +161,8 @@
     <Content Include="Global.asax" />
     <Content Include="Content\site.css" />
     <Content Include="images\bg_1.jpg" />
+    <Content Include="images\bg_2.jpg" />
+    <Content Include="images\home.jpg" />
     <Content Include="Scripts\aos.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -167,6 +172,7 @@
     <Content Include="Scripts\esm\popper-utils.min.js" />
     <Content Include="Scripts\esm\popper.js" />
     <Content Include="Scripts\esm\popper.min.js" />
+    <Content Include="Scripts\hotspot.js" />
     <Content Include="Scripts\index.js.flow" />
     <Content Include="Scripts\esm\popper.min.js.map" />
     <Content Include="Scripts\esm\popper.js.map" />
@@ -208,11 +214,13 @@
     <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery-migrate-3.0.1.min.js" />
+    <Content Include="Scripts\jquery-ui.min.js" />
     <Content Include="Scripts\jquery.animateNumber.min.js" />
     <Content Include="Scripts\jquery.easing.1.3.js" />
     <Content Include="Scripts\jquery.fancybox.min.js" />
     <Content Include="Scripts\jquery.magnific-popup.min.js" />
     <Content Include="Scripts\jquery.stellar.min.js" />
+    <Content Include="Scripts\jquery.steps.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
@@ -225,6 +233,7 @@
     <Content Include="Scripts\popper-utils.min.js" />
     <Content Include="Scripts\popper.js" />
     <Content Include="Scripts\popper.min.js" />
+    <Content Include="Scripts\py.js" />
     <Content Include="Scripts\src\index.js" />
     <Content Include="Scripts\src\methods\defaults.js" />
     <Content Include="Scripts\src\methods\destroy.js" />
@@ -316,7 +325,7 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
-    <Content Include="Views\Home\test.cshtml" />
+    <Content Include="Views\Home\Prepare_yourself.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

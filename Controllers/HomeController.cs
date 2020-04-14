@@ -26,5 +26,14 @@ namespace PhoenixRnR.Controllers
 
             return View();
         }
+
+        public ActionResult Prepare_yourself()
+        {
+            ViewBag.Message = "Your page.";
+
+            return View();
+        }
+
+
     }
 }
