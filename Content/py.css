@@ -503,167 +503,197 @@ input::-ms-input-placeholder { /* Microsoft Edge */
 
 /* House hotspot code*/
 
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
-
-body {
-    margin: 0;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-.notes {
-    margin: auto;
-    padding: 2rem 1.2rem 0;
-    max-width: 35rem;
-    font-family: Open Sans, sans serif;
-    text-align: center;
-}
-
-.container1 {
-    width: 100%;
-    padding: 1em;
-    display: flex;
-    
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.lg-container {
-    max-width: 1200px;
+.BornHS__Wrapper {
     position: relative;
-    margin: 1rem;
-    padding: 0;
 }
 
-.lg-image {
-    display: block;
-    height: 100%;
-    width: 100%;
-    object-fit: scale-down;
-}
-
-.lg-hotspot {
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    transform: translate(-50%, -50%);
-    z-index: 0;
-}
-
-    .lg-hotspot:hover .lg-hotspot__button, .lg-hotspot:active .lg-hotspot__button {
-        border-color: #ff774c;
+    .BornHS__Wrapper .BornHS__Close {
+        display: none;
     }
 
-        .lg-hotspot:hover .lg-hotspot__button:after, .lg-hotspot:active .lg-hotspot__button:after {
-            background-color: #ff774c;
+    .BornHS__Wrapper .Content__Wrapper {
+        position: relative;
+    }
+
+    .BornHS__Wrapper .BornHS__Modal__Content {
+        background: #131313;
+        border-radius: 5px;
+        box-shadow: 0 0 24px rgba(0, 0, 0, 0.22);
+        color: #fff;
+        opacity: 0;
+        position: absolute;
+        transition: all 0.3s ease-in-out;
+        visibility: hidden;
+        width: 360px;
+        z-index: 4;
+    }
+
+        .BornHS__Wrapper .BornHS__Modal__Content .Content__Wrapper {
+            padding: 20px;
         }
 
-.lg-hotspot--selected {
-    z-index: 999;
-}
+            .BornHS__Wrapper .BornHS__Modal__Content .Content__Wrapper .BornHS__Title {
+                font-size: 16px;
+                text-transform: uppercase;
+            }
 
-    .lg-hotspot--selected .lg-hotspot__label {
-        opacity: 1;
-    }
+            .BornHS__Wrapper .BornHS__Modal__Content .Content__Wrapper p {
+                font-size: 13px;
+                margin: 0;
+                padding: 0;
+            }
 
-.lg-hotspot__button {
-    height: 48px;
-    width: 48px;
-    padding: 0px;
-    border-radius: 100%;
-    border: 1px solid #ff6000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    z-index: 999;
-    animation: button-pulse 7s ease-in-out infinite;
-}
-
-    .lg-hotspot__button:after {
+    .BornHS__Wrapper .BornHS__Input {
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        pointer-events: none;
-        content: "";
-        display: block;
-        height: 16.8px;
-        width: 16.8px;
-        border-radius: 100%;
-        border: 3px solid white;
-        background-color: #ff6000;
-        transition: border-color 1s linear;
+        text-indent: -9999px;
+        width: 0;
+        z-index: -1;
     }
 
-.lg-hotspot__label {
+        .BornHS__Wrapper .BornHS__Input + .BornHS__Label {
+            background: #ec2256;
+            border-radius: 50%;
+            cursor: pointer;
+            height: 20px;
+            position: absolute;
+            transition: all 300ms ease;
+            width: 20px;
+            z-index: 2;
+        }
+
+@media (min-width: 768px) {
+    .BornHS__Wrapper .BornHS__Input + .BornHS__Label {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+.BornHS__Wrapper .BornHS__Input + .BornHS__Label:before, .BornHS__Wrapper .BornHS__Input + .BornHS__Label:after {
+    background: #fff;
+    content: "";
+    cursor: pointer;
+    display: block;
+    left: 50%;
     position: absolute;
-    padding: 0 0 1.1em 0;
-    width: 16em;
-    max-width: 50vw;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    font-family: "Open Sans", sans-serif;
-    font-size: 14.5px;
-    line-height: 1.45em;
-    z-index: -1;
-    pointer-events: none;
-    border-radius: 2px;
-    user-select: none;
-    opacity: 0;
-    transition: all 0.1s linear;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
-    .lg-hotspot__label h4 {
-        margin: 0;
-        padding: 0.65em 24px;
-        background-color: #555;
-        font-size: 1.1em;
-        font-weight: normal;
-        letter-spacing: 0.02em;
-        color: white;
-        border-radius: 2px 2px 0 0;
-    }
-
-    .lg-hotspot__label p {
-        margin: 0;
-        padding: 1.1em 24px 0 24px;
-        color: #333;
-    }
-
-.lg-hotspot--top-left .lg-hotspot__label {
-    top: 24px;
-    left: 24px;
+.BornHS__Wrapper .BornHS__Input + .BornHS__Label:before {
+    height: 2px;
+    width: 40%;
 }
 
-.lg-hotspot--top-right .lg-hotspot__label {
-    top: 24px;
-    right: 24px;
+.BornHS__Wrapper .BornHS__Input + .BornHS__Label:after {
+    height: 40%;
+    width: 2px;
 }
 
-.lg-hotspot--bottom-right .lg-hotspot__label {
-    right: 24px;
-    bottom: 24px;
+.BornHS__Wrapper .BornHS__Input ~ .BornHS__Overlay {
+    display: none;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 3;
 }
 
-.lg-hotspot--bottom-left .lg-hotspot__label {
-    bottom: 24px;
-    left: 24px;
+.BornHS__Wrapper .BornHS__Input:checked + .BornHS__Label {
+    transform: rotate(45deg);
 }
 
-@keyframes button-pulse {
-    0% {
-        transform: scale(1, 1);
-        opacity: 1;
+.BornHS__Wrapper .BornHS__Input:checked ~ .BornHS__Modal__Content {
+    opacity: 1;
+    visibility: visible;
+}
+
+.BornHS__Wrapper .BornHS__Input:checked ~ .BornHS__Overlay {
+    display: block;
+}
+
+.BornHS__Wrapper.BornHS__Blur figure {
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+}
+
+.BornHS__Wrapper.BornHS__Blur .BornHS__Input {
+    display: none;
+}
+
+    .BornHS__Wrapper.BornHS__Blur .BornHS__Input + .BornHS__Label {
+        opacity: 0.5;
+        pointer-events: none;
     }
 
-    40% {
-        transform: scale(1.15, 1.15);
-        opacity: 1;
+    .BornHS__Wrapper.BornHS__Blur .BornHS__Input:checked {
+        display: inline-block;
     }
 
-    100% {
-        transform: scale(1, 1);
-        opacity: 1;
+        .BornHS__Wrapper.BornHS__Blur .BornHS__Input:checked + .BornHS__Label {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+.BornHS__Modal {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .BornHS__Wrapper .BornHS__Modal__Content {
+        bottom: auto !important;
+        left: 50% !important;
+        top: 50% !important;
+        transform: translate(-50%, -50%) !important;
     }
+
+        .BornHS__Wrapper .BornHS__Modal__Content .BornHS__Close {
+            background: #ec2256;
+            border-radius: 50%;
+            cursor: pointer;
+            display: block;
+            height: 20px;
+            right: -5px;
+            position: absolute;
+            top: -5px;
+            transition: all 300ms ease;
+            transform: rotate(45deg);
+            width: 20px;
+            z-index: 5;
+        }
+
+            .BornHS__Wrapper .BornHS__Modal__Content .BornHS__Close:before, .BornHS__Wrapper .BornHS__Modal__Content .BornHS__Close:after {
+                background: #fff;
+                content: "";
+                cursor: pointer;
+                display: block;
+                left: 50%;
+                position: absolute;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            .BornHS__Wrapper .BornHS__Modal__Content .BornHS__Close:before {
+                height: 2px;
+                width: 40%;
+            }
+
+            .BornHS__Wrapper .BornHS__Modal__Content .BornHS__Close:after {
+                height: 40%;
+                width: 2px;
+            }
 }
  
