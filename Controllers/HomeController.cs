@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using PhoenixRnR.DAL;
+using PhoenixRnR.Models;
 
 namespace PhoenixRnR.Controllers
 {
@@ -32,6 +34,20 @@ namespace PhoenixRnR.Controllers
             ViewBag.Message = "Your page.";
 
             return View();
+        }
+
+        [HttpGet]
+        public ActionResult FinalChecklist()
+        {
+            ViewBag.Message = "Your page.";
+
+            HouseModel hm = new HouseModel();
+            using (ChecklistContext db = new ChecklistContext())
+            {
+                hm.Homes1 = db.Homes.ToList<Home>();
+            }
+
+                return View(hm);
         }
 
 
