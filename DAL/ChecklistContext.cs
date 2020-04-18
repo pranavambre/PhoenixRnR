@@ -23,6 +23,10 @@ namespace PhoenixRnR.DAL
 
         public DbSet<Flamable> Flamables { get; set; }
 
+        public DbSet<Garden> Gardens { get; set; }
+
+
+
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

@@ -131,6 +131,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HouseController.cs" />
+    <Compile Include="Controllers\WaterResourcesController.cs" />
     <Compile Include="DAL\ChecklistContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -138,6 +139,7 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Emergencykit.cs" />
     <Compile Include="Models\Flamable.cs" />
+    <Compile Include="Models\Garden.cs" />
     <Compile Include="Models\Home.cs" />
     <Compile Include="Models\Pet.cs" />
     <Compile Include="Models\WaterResources.cs" />
@@ -181,11 +183,15 @@
     <Content Include="fonts\open-iconic\open-iconic.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\site.css" />
+    <Content Include="images\Bedroom.jpg" />
     <Content Include="images\bg_1.jpg" />
     <Content Include="images\bg_2.jpg" />
     <Content Include="images\EmergencyKit.jpeg" />
     <Content Include="images\finalcheck.jpg" />
+    <Content Include="images\Fireproof.jpg" />
+    <Content Include="images\Garage_Deck area.jpg" />
     <Content Include="images\home.jpg" />
+    <Content Include="images\Kitchen_Laundry.jpg" />
     <Content Include="obj\Debug\PhoenixRnR.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\PhoenixRnR.dll" />
     <Content Include="obj\Debug\PhoenixRnR.pdb" />
@@ -674,6 +680,11 @@
     <Content Include="Views\House\Edit.cshtml" />
     <Content Include="Views\House\Index.cshtml" />
     <Content Include="Views\Home\FinalChecklist.cshtml" />
+    <Content Include="Views\WaterResources\Create.cshtml" />
+    <Content Include="Views\WaterResources\Delete.cshtml" />
+    <Content Include="Views\WaterResources\Details.cshtml" />
+    <Content Include="Views\WaterResources\Edit.cshtml" />
+    <Content Include="Views\WaterResources\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="obj\Debug\TempPE\" />

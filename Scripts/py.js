@@ -1,3 +1,5 @@
+
+
 $(function () {
     $("#form-total").steps({
         headerTag: "h2",
@@ -34,6 +36,7 @@ $(function () {
     });
 });
 
+
 jQuery(function ($) {
     var pop = $('.map-popup');
     pop.click(function (e) {
@@ -53,12 +56,15 @@ jQuery(function ($) {
 
     pop.each(function () {
         var w = $(window).outerWidth(),
-            edge = Math.round(($(this).offset().left) + ($(this).outerWidth()));
+            edge = Math.round($(this).offset().left + $(this).outerWidth());
         if (w < edge) {
             $(this).addClass('edge');
         }
     });
 });
+
+
+
 
 
 
