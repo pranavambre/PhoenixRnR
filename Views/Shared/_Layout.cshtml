@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
-    
+
     <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,500|Dosis:400,700" rel="stylesheet">
     <link rel="stylesheet" href="~/Content/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="~/Content/animate.css">
@@ -17,10 +17,11 @@
     <link rel="stylesheet" href="~/Content/flaticon.css">
     <link rel="stylesheet" href="~/Content/icomoon.css">
     <link rel="stylesheet" href="~/Content/fancybox.min.css">
-    
-    
+
+
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    
 
 </head>
 <body>
@@ -45,15 +46,15 @@
                     </li>
 
                     @*<li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle || nav-link dropdown-toggle || nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Weed Management
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="dropdown04">
-                            <a class="dropdown-item" href="/Home/WeedManagement">Weed Control</a>
-                            <a class="dropdown-item" href="#">Weed Prevention</a>
+                            <a class="nav-link dropdown-toggle || nav-link dropdown-toggle || nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Weed Management
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown04">
+                                <a class="dropdown-item" href="/Home/WeedManagement">Weed Control</a>
+                                <a class="dropdown-item" href="#">Weed Prevention</a>
 
-                        </div>
-                    </li>*@
+                            </div>
+                        </li>*@
 
 
                     <li class="nav-item"><a href="/Home/FinalChecklist" class="nav-link">Preparation Checklist</a></li>
@@ -75,7 +76,7 @@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+    
 
     <script src="~/Scripts/aos.js"></script>
 
@@ -98,22 +99,22 @@
     <script src="~/Scripts/main.js"></script>
 
     <script>
-        $(document).ready(function() {
-    var url = window.location;                
-    $('.ml-auto li a').each(function () {
-         if (this.href == url) {
-              $("ml-auto li").each(function () {
-                   if ($(this).hasClass("active")) {
-                        $(this).removeClass("active");
-                   }
-              });
-              $(this).parent().addClass('active');
-         }
-    });
+        $(document).ready(function () {
+            var url = window.location;
+            $('.ml-auto li a').each(function () {
+                if (this.href == url) {
+                    $("ml-auto li").each(function () {
+                        if ($(this).hasClass("active")) {
+                            $(this).removeClass("active");
+                        }
+                    });
+                    $(this).parent().addClass('active');
+                }
+            });
         });
 
-       
- 
+
+
     </script>
 
 
@@ -122,5 +123,6 @@
     <script src="~/Scripts/jquery.steps.js"></script>
     <script src="~/Scripts/py.js"></script>
     <script src="~/Scripts/hotspot.js"></script>
+    
 </body>
 </html>

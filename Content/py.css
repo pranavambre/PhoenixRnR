@@ -1149,3 +1149,136 @@ article {
     }
 
 .custom-checkbox { text-align:right;}
+
+/*Water resources*/
+
+.site-section {
+    padding: 4em 0;
+}
+
+.bg-light {
+    background: #f1efed !important;
+    background: #fafafa !important;
+}
+
+.fundraise-item {
+    -webkit-box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.1);
+    border: none;
+    height: 100%;
+}
+
+    .fundraise-item .custom-progress-success {
+        background-color: #f2f2f2;
+        height: .2rem;
+        border-radius: 4px;
+        margin-bottom: 20px;
+    }
+
+    .fundraise-item a {
+        color: #000;
+    }
+
+        .fundraise-item a:hover {
+            color: #f7ca44;
+        }
+
+    .fundraise-item .donation-time {
+        color: #ccc;
+        display: block;
+        font-style: italic;
+        font-size: 15px;
+    }
+
+    .fundraise-item .card-title {
+        font-size: 24px;
+    }
+
+.block-11 .owl-stage {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.block-11 .owl-nav {
+    position: relative;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+    .block-11 .owl-nav .owl-prev, .block-11 .owl-nav .owl-next {
+        position: relative;
+        display: inline-block;
+        padding: 20px;
+        font-size: 30px;
+    }
+
+        .block-11 .owl-nav .owl-prev.disabled, .block-11 .owl-nav .owl-next.disabled {
+            opacity: .2;
+        }
+/*flamable items*/
+.post-entry {
+    margin-bottom: 40px;
+}
+
+    .post-entry .img-wrap {
+        position: relative;
+        display: block;
+        overflow: hidden;
+    }
+
+        .post-entry .img-wrap img {
+            -webkit-transition: .3s all ease;
+            -o-transition: .3s all ease;
+            transition: .3s all ease;
+        }
+
+        .post-entry .img-wrap .date {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 10px 20px;
+            background: #f7ca44;
+            color: #fff;
+            font-size: 14px;
+            -webkit-transition: .3s all ease;
+            -o-transition: .3s all ease;
+            transition: .3s all ease;
+        }
+
+        .post-entry .img-wrap:hover img {
+            -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2);
+        }
+
+        .post-entry .img-wrap:hover .date {
+            font-size: 16px;
+            color: #fff;
+            background: #000;
+        }
+
+    .post-entry h3 {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+        .post-entry h3 a {
+            color: #000;
+        }
+
+            .post-entry h3 a:hover {
+                color: #f7ca44;
+            }
+
+    .post-entry p {
+        color: #999999;
+    }
+
+

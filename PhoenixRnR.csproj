@@ -197,8 +197,13 @@
     <Content Include="images\finalcheck.jpg" />
     <Content Include="images\Fireproof.jpg" />
     <Content Include="images\Garage_Deck area.jpg" />
+    <Content Include="images\garden_pools.jpg" />
     <Content Include="images\home.jpg" />
+    <Content Include="images\hoses_enough.jpg" />
     <Content Include="images\Kitchen_Laundry.jpg" />
+    <Content Include="images\rsz_garden_pools.jpg" />
+    <Content Include="images\sprinkler_system.jpg" />
+    <Content Include="images\water_tank.jpg" />
     <Content Include="obj\Debug\PhoenixRnR.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\PhoenixRnR.dll" />
     <Content Include="obj\Debug\PhoenixRnR.pdb" />
