@@ -10,6 +10,15 @@ namespace PhoenixRnR.Controllers
 {
     public class HomeController : Controller
     {
+        private ChecklistContext db = new ChecklistContext();
+        public ActionResult IndexViewData()
+        {
+            ViewBag.Message = "Welcome to my demo!";
+            ViewData["Home"] = db.Homes.ToList<Home>();
+            ViewData["Garden"] = db.Gardens.ToList<Garden>();
+            return View();
+        }
+
         public ActionResult Index()
         {
             return View();
@@ -39,15 +48,15 @@ namespace PhoenixRnR.Controllers
         [HttpGet]
         public ActionResult FinalChecklist()
         {
-            ViewBag.Message = "Your page.";
+            //ViewBag.Message = "Your page.";
 
-            HouseModel hm = new HouseModel();
-            using (ChecklistContext db = new ChecklistContext())
-            {
-                hm.Homes1 = db.Homes.ToList<Home>();
-            }
+            //HouseModel hm = new HouseModel();
+            //using (ChecklistContext db = new ChecklistContext())
+            //{
+            //    hm.Homes1 = db.Homes.ToList<Home>();
+            //}
 
-                return View(hm);
+             return View();
         }
 
 

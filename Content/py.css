@@ -1147,3 +1147,5 @@ article {
     .featured-donate.overlay-color-2:before, .featured-section.overlay-color-2:before {
         background: #f7ca44;
     }
+
+.custom-checkbox { text-align:right;}

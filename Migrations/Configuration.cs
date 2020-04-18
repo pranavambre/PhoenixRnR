@@ -11,6 +11,7 @@
         {
             AutomaticMigrationsEnabled = true;
             ContextKey = "PhoenixRnR.DAL.ChecklistContext";
+
         }
 
         protected override void Seed(PhoenixRnR.DAL.ChecklistContext context)

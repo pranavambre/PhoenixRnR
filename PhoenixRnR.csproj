@@ -129,18 +129,25 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\GardensController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HouseController.cs" />
+    <Compile Include="Controllers\PetsController.cs" />
     <Compile Include="Controllers\WaterResourcesController.cs" />
     <Compile Include="DAL\ChecklistContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202004180545537_InitialCreate.cs" />
+    <Compile Include="Migrations\202004180545537_InitialCreate.designer.cs">
+      <DependentUpon>202004180545537_InitialCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Emergencykit.cs" />
     <Compile Include="Models\Flamable.cs" />
     <Compile Include="Models\Garden.cs" />
     <Compile Include="Models\Home.cs" />
+    <Compile Include="Models\ParentClass.cs" />
     <Compile Include="Models\Pet.cs" />
     <Compile Include="Models\WaterResources.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -685,6 +692,16 @@
     <Content Include="Views\WaterResources\Details.cshtml" />
     <Content Include="Views\WaterResources\Edit.cshtml" />
     <Content Include="Views\WaterResources\Index.cshtml" />
+    <Content Include="Views\Pets\Create.cshtml" />
+    <Content Include="Views\Pets\Delete.cshtml" />
+    <Content Include="Views\Pets\Details.cshtml" />
+    <Content Include="Views\Pets\Edit.cshtml" />
+    <Content Include="Views\Pets\Index.cshtml" />
+    <Content Include="Views\Gardens\Create.cshtml" />
+    <Content Include="Views\Gardens\Delete.cshtml" />
+    <Content Include="Views\Gardens\Details.cshtml" />
+    <Content Include="Views\Gardens\Edit.cshtml" />
+    <Content Include="Views\Gardens\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="obj\Debug\TempPE\" />
@@ -701,6 +718,11 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202004180545537_InitialCreate.resx">
+      <DependentUpon>202004180545537_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

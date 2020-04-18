@@ -13,6 +13,7 @@ namespace PhoenixRnR.DAL
         public ChecklistContext() : base("ChecklistContext")
         {
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<ChecklistContext, PhoenixRnR.Migrations.Configuration>());
+           // Database.SetInitializer(new MigrateDatabaseToLatestVersion<ChecklistContext, Migrations.Configuration>(null);
         }
 
     public DbSet<Home> Homes { get; set; }

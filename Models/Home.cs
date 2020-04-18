@@ -13,8 +13,5 @@ namespace PhoenixRnR.Models
         public bool IsCheked { get; set; }
     }
 
-    public class HouseModel
-    {
-        public List<Home> Homes1 { get; set; }
-    }
+    
 }
