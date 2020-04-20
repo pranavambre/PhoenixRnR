@@ -64,25 +64,32 @@
             <div class="col-lg-4"></div>
             <div class="col-lg-4" style="text-align:left; margin:auto;">
                 <h5 class="text-uppercase">Final checklist</h5>
-                @*@using (Html.BeginForm())
+                @using (Html.BeginForm())
                 {
-                    <div style="text-align:left;">
-                        @for (int i = 0; i < ParentClass.homes1.count; i++)
-                        {
+            <div style="text-align:left;">
+                @foreach (var i in Model.Homes1)
+                {
 
-                            @:
-                            <div>
-
-                                <label>@Model.Homes1[i].Questions</label>
-                                @Html.HiddenFor(x => x.Homes1[i].ID)
-                                @Html.HiddenFor(x => x.Homes1[i].Questions)
-                                @Html.CheckBoxFor(x => x.Homes1[i].IsCheked, new { @class = "custom-checkbox" })
-                            </div>
-
-                        }
+                    <div>
+                        <label>@i.Questions</label>
+                        <input type="checkbox" class="checklistbox">
                     </div>
+
+                }
+
+                @foreach (var i in Model.Gardens)
+                {
+
+                    <div>
+                        <label>@i.Questions</label>
+                        <input type="checkbox" class="checklistbox">
+                    </div>
+
+                }
+
+            </div>
                     <input type="submit" class="btn btn-outline-primary rounded-0" value="Submit" />
-                }*@
+                }
             </div>
 
             <div class="col-lg-4"></div>

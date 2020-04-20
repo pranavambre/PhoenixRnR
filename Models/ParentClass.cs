@@ -9,11 +9,11 @@ namespace PhoenixRnR.Models
 {
     public class ParentClass
     {
-        public Home Homes1 { get; set; }
-        public Garden Gardens { get; set; }
+        public List<Home> Homes1 { get; set; }
+        public List<Garden> Gardens { get; set; }
 
-        public Pet Pets { get; set; }
+        public List<Pet> Pets { get; set; }
 
-        public WaterResources WaterResources { get; set; }
+        public List<WaterResources> WaterResources { get; set; }
     }
 }
