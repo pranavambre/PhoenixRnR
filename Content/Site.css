@@ -438,7 +438,7 @@ a {
 }
 #panel {
     height: 100%;
-    width: null;
+    width: 1000px;
     background-color: white;
     position: fixed;
     z-index: 1;

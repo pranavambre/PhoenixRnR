@@ -5,6 +5,7 @@
 <link href="~/Content/opensans-font.css" rel="stylesheet" />
 <link href="~/Content/jquery-ui.min.css" rel="stylesheet" />
 <link href="~/Content/py.css" rel="stylesheet" />
+<link href="~/Content/Site.css" rel="stylesheet" />
 <div class="block-31" style="position: relative;">
     <div class="owl-carousel loop-block-31 ">
         <div class="block-30 block-30-sm item" style="background-image: url('../../images/bg_2.jpg'); background-position: 0% 0px;" data-stellar-background-ratio="0.5">
@@ -90,6 +91,11 @@
 
         </div>
 
+        <div id="panel"></div>
+
+        <!-- Map appears here -->
+        <div id="map"></div>
+
         <div class="">
             <h2>FIRE DANGER RATING</h2>
             <p>
@@ -109,9 +115,6 @@
         </div>
     </div>
 </div>
-
-<div id="panel"></div>
-
-<!-- Map appears here -->
-<div id="map"></div>
-
+<script src="~/Scripts/map.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSk2xvp_t2RZsbosqZOG48jhTtN0xvBbw&libraries=places&callback=initMap">
+</script>
