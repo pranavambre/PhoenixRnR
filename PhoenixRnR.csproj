@@ -215,6 +215,7 @@
     <Content Include="images\landscape-clipart-hedge-cutting.png" />
     <Content Include="images\mow_grass.jpg" />
     <Content Include="images\logo.png" />
+    <Content Include="images\pet.jpg" />
     <Content Include="images\rsz_garden_pools.jpg" />
     <Content Include="images\sprinkler_system.jpg" />
     <Content Include="images\trees_shrubs.jpg" />

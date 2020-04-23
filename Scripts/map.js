@@ -69,7 +69,7 @@ function getNearbyPlaces(position) {
     let request = {
         location: position,
         rankBy: google.maps.places.RankBy.DISTANCE,
-        keyword: 'hospitals'
+        keyword: 'hospital'
     };
 
     service = new google.maps.places.PlacesService(map);
