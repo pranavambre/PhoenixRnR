@@ -584,6 +584,7 @@
     <Content Include="packages\popper.js.1.16.0\content\Scripts\umd\popper.min.js.map" />
     <Content Include="packages\popper.js.1.16.0\popper.js.1.16.0.nupkg" />
     <Content Include="packages\WebGrease.1.6.0\WebGrease.1.6.0.nupkg" />
+    <None Include="Properties\PublishProfiles\PhoenixRnR20200424103923 - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
