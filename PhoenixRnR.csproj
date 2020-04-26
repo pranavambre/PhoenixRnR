@@ -220,6 +220,7 @@
     <Content Include="images\mow_grass.jpg" />
     <Content Include="images\logo.png" />
     <Content Include="images\pet.jpg" />
+    <Content Include="images\plant.png" />
     <Content Include="images\prepare_hm.png" />
     <Content Include="images\rsz_emergencykit.png" />
     <Content Include="images\rsz_flam-removebg-preview.png" />
