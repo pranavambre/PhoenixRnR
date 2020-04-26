@@ -196,9 +196,11 @@
     <Content Include="images\Bedroom.jpg" />
     <Content Include="images\bg_1.jpg" />
     <Content Include="images\bg_2.jpg" />
+    <Content Include="images\bushfire.jpg" />
     <Content Include="images\checklist.png" />
     <Content Include="images\construction-512.png" />
     <Content Include="images\Dog-01.png" />
+    <Content Include="images\ember.jpg" />
     <Content Include="images\emergency.png" />
     <Content Include="images\EmergencyKit.jpeg" />
     <Content Include="images\fallen_leaves.jpg" />

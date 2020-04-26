@@ -142,20 +142,24 @@
     -moz-transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
 }
-    .form-register .steps li.current a .step-icon,
+    /*.form-register .steps li.current a .step-icon,
     .form-register .steps li.current a:active .step-icon,
     .form-register .steps li.done a .step-icon,
     .form-register .steps li.done a:active .step-icon {
         background: #5487FA;
+    }*/
+    .form-register .steps li.current a .step-icon,
+    .form-register .steps li.current a:active .step-icon {
+        background: #5487FA;
     }
-.form-register .steps li a .step-text {
-	color: #333;
-	font-size: 12px;
-	font-weight: 400;
-	padding: 10px;
-   
-	
-}
+
+
+    .form-register .steps li a .step-text {
+        color: #333;
+        font-size: 12px;
+        font-weight: 400;
+        padding: 10px;
+    }
 .form-register .content {
 	padding:  0 50px;
 }
@@ -384,16 +388,20 @@ input::-ms-input-placeholder { /* Microsoft Edge */
     -moz-justify-content: center;
     -webkit-justify-content: center;
 }
-.actions ul li.disabled,
-.actions ul li:first-child {
+.actions ul li.disabled
+{
 	display: none;
 }
+.actions ul li:last-child{
+   visibility:hidden;
+}
     .actions ul li {
-        padding: 0;
+        display: flex;
         border: none;
         display: inline-flex;
-        height: 45px;
+        height: 40px;
         width: 150px;
+        margin-left:20px;
         justify-content: center;
         -o-justify-content: center;
         -ms-justify-content: center;
