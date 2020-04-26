@@ -220,6 +220,7 @@
     <Content Include="images\mow_grass.jpg" />
     <Content Include="images\logo.png" />
     <Content Include="images\pet.jpg" />
+    <Content Include="images\pets.jpeg" />
     <Content Include="images\plant.png" />
     <Content Include="images\prepare_hm.png" />
     <Content Include="images\rsz_emergencykit.png" />
@@ -230,6 +231,14 @@
     <Content Include="images\rsz_watericon.png" />
     <Content Include="images\severityhomemap.png" />
     <Content Include="images\shrubs.jpg" />
+    <Content Include="images\slide1.jpg" />
+    <Content Include="images\slide2.jpeg" />
+    <Content Include="images\slide2.jpg" />
+    <Content Include="images\slide3.jpg" />
+    <Content Include="images\slide4.jpeg" />
+    <Content Include="images\slide4.jpg" />
+    <Content Include="images\slide5.jpg" />
+    <Content Include="images\slide6.jpg" />
     <Content Include="images\sprinkler_system.jpg" />
     <Content Include="images\trees_shrubs.jpg" />
     <Content Include="images\trim.jpg" />
@@ -730,6 +739,7 @@
     <Content Include="Views\Gardens\Details.cshtml" />
     <Content Include="Views\Gardens\Edit.cshtml" />
     <Content Include="Views\Gardens\Index.cshtml" />
+    <Content Include="Views\Home\NearbyHospitals.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="obj\Release\TempPE\" />

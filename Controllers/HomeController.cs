@@ -39,6 +39,14 @@ namespace PhoenixRnR.Controllers
             return View();
         }
 
+        public ActionResult NearbyHospitals()
+        {
+            ViewBag.Message = "Your page.";
+
+            return View();
+        }
+
+
         [HttpGet]
         public ActionResult FinalChecklist()
         {

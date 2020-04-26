@@ -1199,12 +1199,18 @@ article {
 /*flamable items*/
 .post-entry {
     margin-bottom: 40px;
+    
+}
+.post-entry .content-wrap {
+    padding-top:10px;
 }
 
     .post-entry .img-wrap {
         position: relative;
         display: block;
         overflow: hidden;
+        background-color:#fff;
+        
     }
 
         .post-entry .img-wrap img {
@@ -1252,7 +1258,7 @@ article {
             }
 
     .post-entry p {
-        color: #999999;
+        color: #000;
     }
 /*Garden Section
 .flip-card {
@@ -1633,7 +1639,7 @@ article {
 /*Pets section*/
 
 .img1 {
-    background-image: url(../../images/pet.jpg);
+    background-image: url(../../images/pets.jpeg);
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1857,7 +1863,7 @@ ul.slides input {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 20px;
+    bottom: 100px;
     z-index: 999;
     text-align: center;
 }
@@ -2022,3 +2028,24 @@ input:checked + .slide-container .nav label {
         }
 }
 
+.carousel-controls label span {
+    visibility:hidden;
+}
+
+/*Slide show pets*/
+
+#slideshow {
+    margin: 80px auto;
+    position: relative;
+  
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+    #slideshow > div {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+    }

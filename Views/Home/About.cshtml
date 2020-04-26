@@ -13,7 +13,7 @@
                 <div class="row align-items-center justify-content-center text-center">
                     <div class="col-md-7">
                         <h2 class="heading mb-5">Know about bushfire.</h2>
-                        
+
                     </div>
                 </div>
             </div>
@@ -22,133 +22,99 @@
     </div>
 </div>
 
-<div class="accordion container" id="accordionExample">
-    <div class="card">
-        <div class="card-header" id="headingOne">
-            <h2 class="mb-0">
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="text-align:center;">
-                   Emergency Maps
-                </button>
-            </h2>
-        </div>
-
-        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-            <div class="card-body">
-                <iframe width="100%" height="600px" src="https://google.org/crisismap/australia?hl=en&llbox=-28.23%2C-40.42%2C161.41%2C127.66&t=TERRAIN&layers=14%2C3%2C4%2C7%2C8%2C9%2C10%3A100%2Clayer0%2C1%2C12&embedded=true" style="border: 1px solid #ccc"></iframe>
-            </div>
+<div class="container" id="emergencymap" style="margin-top:20px; background-color:#ffca55;">
+    <h2 style="padding-top:15px;">Emergency Maps</h2>
+    <div style="padding:20px;">
+        <iframe width="100%" height="600px" src="https://google.org/crisismap/australia?hl=en&llbox=-28.23%2C-40.42%2C161.41%2C127.66&t=TERRAIN&layers=14%2C3%2C4%2C7%2C8%2C9%2C10%3A100%2Clayer0%2C1%2C12&embedded=true" style="border: 1px solid #ccc"></iframe>
+    </div>
+    <div class="row mb-5">
+        <div class="col-md-12">
+            <h2 style="text-align:center; margin-top:15px;">KNOW THE BUSH FIRE ALERT LEVELS</h2>
         </div>
     </div>
-    <div class="card">
-        <div class="card-header" id="headingTwo">
-            <h2 class="mb-0">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Nearby hospitals
-                </button>
-            </h2>
+
+    <div class="row">
+
+        <div class="col-lg-4">
+            <div class="post-entry" style="text-align:center">
+                <div class="img-wrap">
+                    <img src="~/images/advice.png" alt="Image placeholder" class="img-fluid">
+                    </div>
+                <div class="content-wrap">
+                    <h3><a href="#">ADVICE</a></h3>
+                    <p style="justify-content:center;">
+                        A fire has started.
+                        There is no immediate danger.
+                        Stay up to date in case
+                        the situation changes.
+                    </p>
+                    </div>
+
+                </div>
         </div>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-            <div class="card-body">
-                <div id="panel"></div>
-                <!-- Map appears here -->
-                <div id="map"></div>
+        <div class="col-lg-4">
+            <div class="post-entry" style="text-align:center;">
+                <div class="img-wrap">
+                    <img src="~/images/watchnact.png" alt="Image placeholder" class="img-fluid">
+                </div>
+                <div class="content-wrap">
+                    <h3><a href="#">WATCH AND ACT</a></h3>
+
+                    <p style="justify-content:center;">
+                        There is a heightened level of threat.
+                        Conditions are changing and you
+                        need to start taking action to protect
+                        you and your family.
+                    </p>
+                </div>
             </div>
-        </div>
-     </div>
+            </div>
+        <div class="col-lg-4">
+            <div class="post-entry" style="text-align:center">
+                <div class="img-wrap">
+                    <img src="~/images/emergency.png" alt="Image placeholder" class="img-fluid">
+                </div>
+                <div class="content-wrap">
+                    <h3><a href="#">EMERGENCY WARNING</a></h3>
+
+                    <p style="justify-content:center;">
+                        An Emergency Warning is the highest level
+                        of Bush Fire Alert. You may be in danger
+                        and need to take action immediately.
+                        Any delay now puts your life at risk.
+                    </p>
+
+                </div>
+            </div>
+
+</div>
+
     </div>
-        @*<div class="container" id="emergencymap" style="margin-top:20px;">
-            <h2>Australia Emergency Maps</h2>
-            <iframe width="100%" height="600px" src="https://google.org/crisismap/australia?hl=en&llbox=-28.23%2C-40.42%2C161.41%2C127.66&t=TERRAIN&layers=14%2C3%2C4%2C7%2C8%2C9%2C10%3A100%2Clayer0%2C1%2C12&embedded=true" style="border: 1px solid #ccc"></iframe>
-        </div>
-        <div class="container" id="nearbymap">
-            <div id="panel"></div>
-            <!-- Map appears here -->
-            <div id="map"></div>
-        </div>*@
-        <div class=" ">
-            <div class="container">
-                <div class="row mb-5">
-                    <div class="col-md-12">
-                        <h2 style="text-align:center; margin-top:15px;">KNOW THE BUSH FIRE ALERT LEVELS</h2>
-                    </div>
-                </div>
-
-                <div class="row">
-
-                    <div class="col-lg-4">
-                        <div class="post-entry" style="text-align:center">
-                            <a href="#" class="mb-3 img-wrap">
-                                <img src="~/images/advice.png" alt="Image placeholder" class="img-fluid">
-                            </a>
-                            <h3><a href="#">ADVICE</a></h3>
-
-                            <p style="justify-content:center;">
-                                A fire has started.
-                                There is no immediate danger.
-                                Stay up to date in case
-                                the situation changes.
-
-                            </p>
-
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="post-entry" style="text-align:center;">
-                            <a href="#" class="mb-3 img-wrap">
-                                <img src="~/images/watchnact.png" alt="Image placeholder" class="img-fluid">
-                            </a>
-                            <h3><a href="#">WATCH AND ACT</a></h3>
-
-                            <p style="justify-content:center;">
-                                There is a heightened level of threat.
-                                Conditions are changing and you
-                                need to start taking action to protect
-                                you and your family.
-                            </p>
-
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="post-entry" style="text-align:center">
-                            <a href="#" class="mb-3 img-wrap">
-                                <img src="~/images/emergency.png" alt="Image placeholder" class="img-fluid">
-                            </a>
-                            <h3><a href="#">EMERGENCY WARNING</a></h3>
-
-                            <p style="justify-content:center;">
-                                An Emergency Warning is the highest level
-                                of Bush Fire Alert. You may be in danger
-                                and need to take action immediately.
-                                Any delay now puts your life at risk.
-                            </p>
-
-                        </div>
-                    </div>
+</div>
 
 
 
-                </div>
+    <div class="container" style="padding:20px;">
 
-
-
-                <div class="">
-                    <h2>FIRE DANGER RATING</h2>
-                    <p>
-                        Before a fire even starts, monitor the Fire Danger Ratings daily at <a href="https://www.cfa.vic.gov.au/warnings-restrictions/total-fire-bans-and-ratings">Victoria fire bans and ratings</a>. The higher the fire danger rating,
-                        the more dangerous a fire is likely to be. Under catastrophic conditions leaving early is the only safe option.
-                    </p>
-                    <p>When it’s <b>SEVERE</b> you should only stay if your home is well prepared and you’re ready to defend it.</p>
-                    <p>
-                        At <b>EXTREME</b>, only stay if your home is prepared to the very highest level and is specially built to survive a bush fire
-                    </p>
-                    <p>
-                        <b>CATASTROPHIC</b> is as bad as it gets – no homes are built to withstand a fire in these conditions. Leaving early is your only safe option.
-                    </p>
-                    <div class="" style="text-align:center">
-                        <img src="~/images/FDR.png" style="width:40%;" />
-                    </div>
-                </div>
-
-
-
+        <div class="">
+            <h2>FIRE DANGER RATING</h2>
+            <p>
+                Before a fire even starts, monitor the Fire Danger Ratings daily at <a href="https://www.cfa.vic.gov.au/warnings-restrictions/total-fire-bans-and-ratings">Victoria fire bans and ratings</a>. The higher the fire danger rating,
+                the more dangerous a fire is likely to be. Under catastrophic conditions leaving early is the only safe option.
+            </p>
+            <p>When it’s <b>SEVERE</b> you should only stay if your home is well prepared and you’re ready to defend it.</p>
+            <p>
+                At <b>EXTREME</b>, only stay if your home is prepared to the very highest level and is specially built to survive a bush fire
+            </p>
+            <p>
+                <b>CATASTROPHIC</b> is as bad as it gets – no homes are built to withstand a fire in these conditions. Leaving early is your only safe option.
+            </p>
+            <div class="" style="text-align:center">
+                <img src="~/images/FDR.png" style="width:40%;" />
             </div>
         </div>
+
+
+
+    </div>
+
