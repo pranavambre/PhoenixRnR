@@ -433,18 +433,22 @@ a {
     }
 
 #map {
-    height: 500px;
+    height: 400px;
     background-color: grey;
 }
 #panel {
-    height: 1000px;
-    width: 1000px;
+    height: 80%;
     background-color: white;
-    position: fixed;
+    position: absolute;
     z-index: 1;
     overflow-x: hidden;
     transition: all .2s ease-out;
 }
+
+    #panel h1 {
+        font-size: 28px;
+        padding-top: 20px;
+    }
 
 .open {
     width: 250px;
@@ -468,4 +472,7 @@ p {
 .details {
     color: darkslategrey;
 }
-
+footer {
+    text-align: center;
+    background-color: #f7ca44;
+}
