@@ -779,9 +779,39 @@ input::-ms-input-placeholder { /* Microsoft Edge */
     left: 80%;
 }
 
-.marker6 {
+.marker8 {
     top: 45%;
     left: 20%;
+}
+
+.marker9 {
+    top: 10%;
+    left: 35%;
+}
+
+.marker10 {
+    top: 10%;
+    left: 60%;
+}
+
+.marker11 {
+    top: 73%;
+    left: 74%;
+}
+
+.marker12 {
+    top: 55%;
+    left: 16%;
+}
+
+.marker13 {
+    top: 75%;
+    left: 16%;
+}
+
+.marker14 {
+    top: 75%;
+    left: 46%;
 }
 
 @media only screen and (min-width:48em) {
@@ -837,6 +867,35 @@ input::-ms-input-placeholder { /* Microsoft Edge */
         top: 55%;
         left: 18%;
     }
+
+    .map-item9 {
+        top: 10%;
+        left: 35%;
+    }
+
+    .map-item10 {
+        top: 10%;
+        left: 60%;
+    }
+
+    .map-item11 {
+        top: 73%;
+        left: 68%;
+    }
+    .map-item12 {
+        top: 70%;
+        left: 14%;
+    }
+
+    .map-item13 {
+        top: 95%;
+        left: 24%;
+    }
+    .map-item14 {
+        top: 95%;
+        left: 54%;
+    }
+
 
     .map-popup {
         position: absolute;
@@ -1223,7 +1282,7 @@ article {
         position: relative;
         display: block;
         overflow: hidden;
-        background-color:#fff;
+       
         
     }
 
@@ -1650,6 +1709,19 @@ article {
         padding-left:0px;
     }
 
+    .blacksummer {
+        padding:20px;
+    }
+
+        .blacksummer .con {
+            background-color: #d9d9d945;
+            padding: 35px;
+        }
+
+        .blacksummer .blackcon{
+            padding:25px;
+        }
+
 /*Pets section*/
 
 .img1 {
@@ -1926,8 +1998,12 @@ input:checked + .slide-container .nav label {
 }
 
 
-
-
+.blacksummer .col-lg-7 img {
+    width: 90%;
+}
+.emberattack .col-lg-5 img {
+    width: 100%;
+}
 
 
 /*Media queries*/
@@ -2060,7 +2136,7 @@ input:checked + .slide-container .nav label {
 
 /*Slide show pets*/
 #slideshow {
-    margin: 80px auto;
+  
     position: relative;
     padding: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
@@ -2087,6 +2163,23 @@ input:checked + .slide-container .nav label {
 @media only screen and (max-width: 450px) {
     .slider-wrapper {
         border-radius: 0;
+    }
+
+    .marker5 {
+        top: 59%;
+        left: 50%;
+    }
+    .marker13 {
+        top: 94%;
+        left: 16%;
+    }
+    .marker12 {
+        top: 66%;
+        left: 6%;
+    }
+    .marker6 {
+        top: 34%;
+        left: 9%;
     }
 
         .slider-wrapper .info {
@@ -2120,6 +2213,10 @@ input:checked + .slide-container .nav label {
         font-size: 20px;
     }
 
+    .navbar-brand{
+        font-size:20px;
+    }
+
     .img-fluid {
         width:100%;
     }
@@ -2133,6 +2230,22 @@ input:checked + .slide-container .nav label {
         text-align:justify;
        
     }
+
+    .emberattack{
+        text-align:justify;
+    }
+
+        .emberattack h2 {
+            font-size: 20px;
+            text-align: center;
+            color: #000;
+        }
+
+    .emberattack p {
+        font-size: 15px;
+        text-align: justify;
+    }
+
 
     .blacksummer .col-lg-7 {
         margin-bottom:10px;
@@ -2148,7 +2261,7 @@ input:checked + .slide-container .nav label {
         color:#000;
     }
     .blacksummer p{
-        font-size:16px;
+        font-size:15px;
         text-align:justify;
     }
 
@@ -2175,7 +2288,18 @@ input:checked + .slide-container .nav label {
 
    }
 
+   #slideshow{
+       visibility:hidden;
+   }
+
    .map img{
        width:100%;
    }
+    .block-30.block-30-sm .heading {
+        font-size: 40px;
+    }
+
+    .card {
+        margin-bottom:20px;
+    }
     }

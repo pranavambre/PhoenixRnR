@@ -191,6 +191,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\site.css" />
     <Content Include="images\64361.png" />
+    <Content Include="images\advice-removebg-preview.png" />
     <Content Include="images\bg3.jpg" />
     <Content Include="images\advice.png" />
     <Content Include="images\Bedroom.jpg" />
@@ -201,9 +202,11 @@
     <Content Include="images\construction-512.png" />
     <Content Include="images\Dog-01.png" />
     <Content Include="images\ember.jpg" />
+    <Content Include="images\emergency-removebg-preview.png" />
     <Content Include="images\emergency.png" />
     <Content Include="images\EmergencyKit.jpeg" />
     <Content Include="images\fallen_leaves.jpg" />
+    <Content Include="images\family.jpg" />
     <Content Include="images\FDR.png" />
     <Content Include="images\finalcheck.jpg" />
     <Content Include="images\Fireproof.jpg" />
@@ -229,10 +232,17 @@
     <Content Include="images\rsz_flam-removebg-preview.png" />
     <Content Include="images\rsz_gardenicon.png" />
     <Content Include="images\rsz_garden_pools.jpg" />
+    <Content Include="images\rsz_houseicon.png" />
     <Content Include="images\rsz_schoolIcon.png" />
     <Content Include="images\rsz_watericon.png" />
     <Content Include="images\severityhomemap.png" />
     <Content Include="images\shrubs.jpg" />
+    <Content Include="images\slide-1.jpg" />
+    <Content Include="images\slide-2.jpg" />
+    <Content Include="images\slide-3.jpg" />
+    <Content Include="images\slide-4.jpg" />
+    <Content Include="images\slide-5.jpg" />
+    <Content Include="images\slide-6.jpg" />
     <Content Include="images\slide1.jpg" />
     <Content Include="images\slide2.jpeg" />
     <Content Include="images\slide2.jpg" />
@@ -244,6 +254,7 @@
     <Content Include="images\sprinkler_system.jpg" />
     <Content Include="images\trees_shrubs.jpg" />
     <Content Include="images\trim.jpg" />
+    <Content Include="images\watchnact-removebg-preview.png" />
     <Content Include="images\watchnact.png" />
     <Content Include="images\water_tank.jpg" />
     <Content Include="obj\Release\PhoenixRnR.csproj.FileListAbsolute.txt" />
@@ -706,7 +717,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Map.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\umd\popper.min.js.map" />
