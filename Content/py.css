@@ -2169,19 +2169,27 @@ input:checked + .slide-container .nav label {
         font-size: 14px;
     }
 }
+@media only screen and (max-width: 772px) {
+    #slideshow{
+        visibility:hidden;
+    }
+}
 /*---- MOBILE----*/
 @media only screen and (max-width: 450px) {
     .slider-wrapper {
         border-radius: 0;
     }
+
     .marker2 {
         top: 30%;
         left: 77%;
     }
+
     .marker4 {
         top: 7%;
         left: 15%;
     }
+
     .marker8 {
         top: 58%;
         left: 20%;
@@ -2191,39 +2199,43 @@ input:checked + .slide-container .nav label {
         top: 59%;
         left: 50%;
     }
+
     .marker13 {
         top: 94%;
         left: 16%;
     }
+
     .marker12 {
         top: 66%;
         left: 6%;
     }
+
     .marker6 {
         top: 34%;
         left: 9%;
     }
+
     .marker15 {
         top: 89%;
         left: 83%;
     }
 
-        .slider-wrapper .info {
-            opacity: 0;
-        }
+    .slider-wrapper .info {
+        opacity: 0;
+    }
 
-    .form-register .steps li a .title .step-icon{
-        font-size:10px;
-       padding:12px;
+    .form-register .steps li a .title .step-icon {
+        font-size: 10px;
+        padding: 12px;
     }
 
     .form-heading_p {
-        padding:10px;
-        font-size:10px;
+        padding: 10px;
+        font-size: 10px;
     }
 
-    .top5action{
-        font-size:20px;
+    .top5action {
+        font-size: 20px;
     }
 
     .img-fluid1 {
@@ -2239,26 +2251,26 @@ input:checked + .slide-container .nav label {
         font-size: 20px;
     }
 
-    .navbar-brand{
-        font-size:20px;
+    .navbar-brand {
+        font-size: 20px;
     }
 
     .img-fluid {
-        width:100%;
+        width: 100%;
     }
 
     .service-card {
         margin-bottom: 15px;
-        border:none;
+        border: none;
         border-bottom: 1px solid #dcd9d9;
     }
+
     .blacksummer {
-        text-align:justify;
-       
+        text-align: justify;
     }
 
-    .emberattack{
-        text-align:justify;
+    .emberattack {
+        text-align: justify;
     }
 
         .emberattack h2 {
@@ -2267,69 +2279,71 @@ input:checked + .slide-container .nav label {
             color: #000;
         }
 
-    .emberattack p {
+        .emberattack p {
+            font-size: 15px;
+            text-align: justify;
+        }
+
+
+    .blacksummer .col-lg-7 {
+        margin-bottom: 10px;
+    }
+
+        .blacksummer .col-lg-7 img {
+            width: 100%;
+        }
+
+    .blacksummer h2 {
+        font-size: 20px;
+        text-align: center;
+        color: #000;
+    }
+
+    .blacksummer p {
         font-size: 15px;
         text-align: justify;
     }
 
-
-    .blacksummer .col-lg-7 {
-        margin-bottom:10px;
-    }
-
-    .blacksummer .col-lg-7 img{
-        width:100%;
-    }
-
-    .blacksummer h2{
-        font-size:20px;
-        text-align:center;
-        color:#000;
-    }
-    .blacksummer p{
-        font-size:15px;
-        text-align:justify;
-    }
-
     .carousel-dots {
-        visibility:hidden;
+        visibility: hidden;
     }
 
     ul.slides {
-        height:120px;
+        height: 120px;
     }
 
-    .btn-custom{
-        visibility:hidden;
-    }
-   .services-wrap .services-list{
-        padding:14px;
+    .btn-custom {
+        visibility: hidden;
     }
 
-   .marker {
-       width:22px;
-       height:22px;
-       font-size:12px;
-       line-height:1;
+    .services-wrap .services-list {
+        padding: 14px;
+    }
 
-   }
+    .marker {
+        width: 22px;
+        height: 22px;
+        font-size: 12px;
+        line-height: 1;
+    }
 
-   #slideshow{
-       visibility:hidden;
-   }
+    #slideshow {
+        visibility: hidden;
+    }
 
-   .map img{
-       width:100%;
-   }
+    .map img {
+        width: 100%;
+    }
+
     .block-30.block-30-sm .heading {
         font-size: 40px;
     }
 
     .card {
-        margin-bottom:20px;
-    }
-    .img-advice {
-        width:25%;
+        margin-bottom: 20px;
     }
 
+    .img-advice {
+        width: 25%;
     }
+}
