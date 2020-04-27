@@ -774,6 +774,16 @@ input::-ms-input-placeholder { /* Microsoft Edge */
     left: 17%;
 }
 
+.marker7 {
+    top: 60%;
+    left: 80%;
+}
+
+.marker6 {
+    top: 45%;
+    left: 20%;
+}
+
 @media only screen and (min-width:48em) {
     .map-item {
         position: absolute;
@@ -815,6 +825,17 @@ input::-ms-input-placeholder { /* Microsoft Edge */
     .map-item6 {
         top: 35%;
         left: 17%;
+    }
+
+    .map-item7 {
+        top: 60%;
+        left: 50%;
+    }
+
+
+    .map-item8 {
+        top: 55%;
+        left: 18%;
     }
 
     .map-popup {
@@ -1060,22 +1081,7 @@ article {
     margin-left: -400%;
 }
 
-/*---- TABLET ----*/
-@media only screen and (max-width: 850px) and (min-width: 450px) {
-    .slider-wrapper {
-        border-radius: 0;
-    }
-}
-/*---- MOBILE----*/
-@media only screen and (max-width: 450px) {
-    .slider-wrapper {
-        border-radius: 0;
-    }
 
-        .slider-wrapper .info {
-            opacity: 0;
-        }
-}
 
 @media only screen and (min-width: 850px) {
     
@@ -1871,7 +1877,7 @@ ul.slides input {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 100px;
+    bottom: 20px;
     z-index: 999;
     text-align: center;
 }
@@ -2040,12 +2046,22 @@ input:checked + .slide-container .nav label {
     visibility:hidden;
 }
 
-/*Slide show pets*/
+.form-heading_p {
+    margin-top: 0;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center
+}
 
+.service-card {
+    border:none;
+}
+
+
+/*Slide show pets*/
 #slideshow {
     margin: 80px auto;
     position: relative;
-  
     padding: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
@@ -2056,4 +2072,110 @@ input:checked + .slide-container .nav label {
         left: 10px;
         right: 10px;
         bottom: 10px;
+    }
+/*---- TABLET ----*/
+@media only screen and (max-width: 850px) and (min-width: 450px) {
+    .slider-wrapper {
+        border-radius: 0;
+    }
+
+    .form-register .steps li a .title .step-icon {
+        font-size: 14px;
+    }
+}
+/*---- MOBILE----*/
+@media only screen and (max-width: 450px) {
+    .slider-wrapper {
+        border-radius: 0;
+    }
+
+        .slider-wrapper .info {
+            opacity: 0;
+        }
+
+    .form-register .steps li a .title .step-icon{
+        font-size:10px;
+       padding:12px;
+    }
+
+    .form-heading_p {
+        padding:10px;
+        font-size:10px;
+    }
+
+    .top5action{
+        font-size:20px;
+    }
+
+    .img-fluid1 {
+        max-width: 35%;
+    }
+
+    .actions ul li {
+        height: 35px;
+        width: 120px;
+    }
+
+    .ftco-navbar-light.scrolled .navbar-brand {
+        font-size: 20px;
+    }
+
+    .img-fluid {
+        width:100%;
+    }
+
+    .service-card {
+        margin-bottom: 15px;
+        border:none;
+        border-bottom: 1px solid #dcd9d9;
+    }
+    .blacksummer {
+        text-align:justify;
+       
+    }
+
+    .blacksummer .col-lg-7 {
+        margin-bottom:10px;
+    }
+
+    .blacksummer .col-lg-7 img{
+        width:100%;
+    }
+
+    .blacksummer h2{
+        font-size:20px;
+        text-align:center;
+        color:#000;
+    }
+    .blacksummer p{
+        font-size:16px;
+        text-align:justify;
+    }
+
+    .carousel-dots {
+        visibility:hidden;
+    }
+
+    ul.slides {
+        height:120px;
+    }
+
+    .btn-custom{
+        visibility:hidden;
+    }
+   .services-wrap .services-list{
+        padding:14px;
+    }
+
+   .marker {
+       width:22px;
+       height:22px;
+       font-size:12px;
+       line-height:1;
+
+   }
+
+   .map img{
+       width:100%;
+   }
     }
