@@ -4,6 +4,7 @@ let bounds;
 let infoWindow;
 let currentInfoWindow;
 let service;
+let service2;
 let infoPane;
 function initMap() {
     // Initialize variables
@@ -74,7 +75,12 @@ function getNearbyPlaces(position) {
 
     service = new google.maps.places.PlacesService(map);
     service.nearbySearch(request, nearbyCallback);
+
+
 }
+
+
+
 
 // Handle the results (up to 20) of the Nearby Search
 function nearbyCallback(results, status) {

@@ -172,6 +172,7 @@
     <Content Include="Content\icomoon.css" />
     <Content Include="Content\ionicons.min.css" />
     <Content Include="Content\jquery-ui.min.css" />
+    <Content Include="Content\jquery.quiz-min.css" />
     <Content Include="Content\open-iconic-bootstrap.min.css" />
     <Content Include="Content\opensans-font.css" />
     <Content Include="Content\owl.carousel.min.css" />
@@ -469,6 +470,7 @@
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\checklist.js" />
     <Content Include="Scripts\esm\popper-utils.js" />
     <Content Include="Scripts\esm\popper-utils.min.js" />
     <Content Include="Scripts\esm\popper.js" />
@@ -623,6 +625,7 @@
     <Content Include="Scripts\jquery.easing.1.3.js" />
     <Content Include="Scripts\jquery.fancybox.min.js" />
     <Content Include="Scripts\jquery.magnific-popup.min.js" />
+    <Content Include="Scripts\jquery.quiz-min.js" />
     <Content Include="Scripts\jquery.stellar.min.js" />
     <Content Include="Scripts\jquery.steps.js" />
     <Content Include="Scripts\jquery.validate.js" />
@@ -753,6 +756,8 @@
     <Content Include="Views\Gardens\Edit.cshtml" />
     <Content Include="Views\Gardens\Index.cshtml" />
     <Content Include="Views\Home\NearbyHospitals.cshtml" />
+    <Content Include="Views\Home\GetYourChecklist.cshtml" />
+    <Content Include="Views\Home\Quiz.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="obj\Release\TempPE\" />

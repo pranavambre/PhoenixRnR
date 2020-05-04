@@ -59,8 +59,8 @@
         </li>*@
 
 
-                    @*<li class="nav-item"><a href="#" class="nav-link">Get your checklist</a></li>
-                    <li class="nav-item"><a href="#l" class="nav-link">Calculate severity level</a></li>*@
+                    <li class="nav-item"><a href="/Home/GetYourChecklist" class="nav-link">Get your checklist</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Calculate severity level</a></li>
 
                     <li class="nav-item dropdown">
                         <a href="/Home/About" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Maps</a>
@@ -76,7 +76,7 @@
     </nav>
     <div class="">
         @RenderBody()
-        <hr />
+        
         <footer>
             <p>&copy; @DateTime.Now.Year - All rights reserved | TheFireBreak Application</p>
         </footer>
@@ -135,9 +135,8 @@
     <script src="~/Scripts/jquery.steps.js"></script>
     <script src="~/Scripts/py.js"></script>
     <script src="~/Scripts/hotspot.js"></script>
-    <script src="~/Scripts/map.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA94y2NAlkTLo3U1z3QfiriqZw8VgkLgHk&libraries=places&callback=initMap">
-    </script>
+
+
 
 
 

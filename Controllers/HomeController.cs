@@ -46,26 +46,43 @@ namespace PhoenixRnR.Controllers
             return View();
         }
 
-
-        [HttpGet]
-        public ActionResult FinalChecklist()
+        public ActionResult Quiz()
         {
-
-            ParentClass pc = new ParentClass();
-            pc.Homes1 = db.Homes.ToList<Home>();
-            pc.Gardens = db.Gardens.ToList<Garden>();
-
-            
-            //ViewBag.Message = "Your page.";
-
-            //HouseModel hm = new HouseModel();
-            //using (ChecklistContext db = new ChecklistContext())
-            //{
-            //    hm.Homes1 = db.Homes.ToList<Home>();
-            //}
-
-             return View(pc);
+            return View();
         }
+
+        public ActionResult GetYourChecklist()
+        {
+           
+
+            return View();
+        }
+
+
+
+
+
+        //[HttpPost]
+        //public ActionResult FinalChecklist()
+        //{
+
+        //    ParentClass pc = new ParentClass();
+        //    pc.Homes1 = db.Homes.ToList<Home>();
+        //    pc.Gardens = db.Gardens.ToList<Garden>();
+
+
+        //    //ViewBag.Message = "Your page.";
+
+        //    //HouseModel hm = new HouseModel();
+        //    //using (ChecklistContext db = new ChecklistContext())
+        //    //{
+        //    //    hm.Homes1 = db.Homes.ToList<Home>();
+        //    //}
+
+        //     return View(pc);
+        //}
+
+
 
 
     }
