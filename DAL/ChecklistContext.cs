@@ -34,5 +34,6 @@ namespace PhoenixRnR.DAL
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
         }
 
+        public System.Data.Entity.DbSet<PhoenixRnR.Models.Vet> Vets { get; set; }
     }
 }

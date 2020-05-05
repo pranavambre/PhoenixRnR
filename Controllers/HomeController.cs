@@ -36,7 +36,7 @@ namespace PhoenixRnR.Controllers
         {
             ViewBag.Message = "Your page.";
 
-            return View();
+            return View(db.Vets.ToList());
         }
 
         public ActionResult NearbyHospitals()
