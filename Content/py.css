@@ -949,9 +949,9 @@ input::-ms-input-placeholder { /* Microsoft Edge */
     position: relative;
 }
 
-input {
+/*input {
     display: none;
-}
+}*/
 
 .inner1 {
     width: 500%;
@@ -2054,10 +2054,32 @@ input:checked + .slide-container .nav label {
 
 
 
-#surveyElement{
+#surveyElement {
     /*text-align:center*/;
-    width:60%;
-    margin: 0 auto;
+    /*width: 60%;*/
+    
+}
+
+.checklistdiv {
+    width: 60%;
+    margin: 15px auto;
+    border-radius: 10px;
+    background: #ffca55;
+    padding: 20px;
+    box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.5);
+}
+
+.sv-root-modern .sv-footer__complete-btn {
+    background-color: #5487FA;
+  
+}
+
+.sv-root-modern .sv-footer__next-btn {
+    background-color: #5487FA;
+}
+
+.sv-root-modern .sv-footer__prev-btn {
+    background-color: #5487FA;
 }
 
 #surveyResult {
@@ -2068,11 +2090,8 @@ input:checked + .slide-container .nav label {
     font-size: 24px;
     margin-top: 20px;
     margin: 0 auto;
-  
     /*border-radius: 5px;*/
     padding: 10px;
-    
- 
 }
 
 .sv-completedpage {
@@ -2096,11 +2115,10 @@ input:checked + .slide-container .nav label {
 
 .sv-page {
     /*background: linear-gradient(to left, #faa72c 0%, #ffa115 100%);*/
-    background-color:#fff;
-    border: 1px solid rgba(0, 0, 0, 0.4);
+    background-color: #fff;
+    border: 1px solid rgba(153, 146, 146, 0.55);
     border-radius: 10px;
     padding: 10px;
-    box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.5);
     color: #2c2c2c;
 }
     .sv-row:not(:last-child) {
@@ -2132,18 +2150,16 @@ input:checked + .slide-container .nav label {
     border-top: 0;
 }
 .sv-root-modern .sv-radio__svg {
-    border-color: #4d4d4d;
+    border-color: #868686;
 }
+
 
 .sv-root-modern .sv-checkbox__svg {
-    border-color: #4d4d4d;
+    border-color: #868686;
 }
-.sq-title {
-    font-size: 20px;
-    margin-left: 20px;
-    text-align:center;
+.sv-title {
+    font-weight: 100;
 }
-
 .sq-title-required {
     color: red;
 }
@@ -2154,6 +2170,14 @@ input:checked + .slide-container .nav label {
 
 .sq-item:nth-child(1) {
     margin-bottom: 5px;
+}
+
+.sv-footer__complete-btn {
+    display: block;
+}
+
+sv-footer__next-btn {
+    display: block;
 }
 
 
