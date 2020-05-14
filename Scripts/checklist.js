@@ -988,7 +988,7 @@ survey
 
             document
                 .querySelector('#surveyResult')
-                .innerHTML = "Your total score is <b>" + JSON.stringify(finalscore) + "%</b>." + "  You are not fully ready. Please go to preparation steps <a href='~/Views/Home/Prepare.cshtml' style='color:#5487FA'>Click here!</a>";
+                .innerHTML = "Your total score is <b>" + JSON.stringify(finalscore) + "%</b>." + "  You are not fully ready. Please go to preparation steps <a href='/Home/Prepare' style='color:#5487FA'>Click here!</a>";
         }
         else {
 
@@ -999,7 +999,7 @@ survey
             //document.getElementById("surveyResult").style.boxShadow = "0 3px 40px 0 rgba(0, 0, 0, 0.15)";
             document
                 .querySelector('#surveyResult')
-                .innerHTML = "Your total score is " + JSON.stringify(finalscore) + "%." + " You are fully ready to leave early. Do check the last minute checklist before leaving.";
+                .innerHTML = "Your total score is " + JSON.stringify(finalscore) + "%." + " You are fully ready to leave early. Do check the <a href='/Home/FinalChecklist' style='color:#5487FA'>last minute checklist </a> before leaving.";
 
         }
     });

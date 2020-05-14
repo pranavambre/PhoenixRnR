@@ -156,7 +156,7 @@
 
     .form-register .steps li a .step-text {
         color: #333;
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 400;
         padding: 10px;
     }
@@ -503,9 +503,10 @@ input::-ms-input-placeholder { /* Microsoft Edge */
             }
 
             .BornHS__Wrapper .BornHS__Modal__Content .Content__Wrapper p {
-                font-size: 13px;
+                font-size: 14px;
                 margin: 0;
                 padding: 0;
+                text-align:justify;
             }
 
     .BornHS__Wrapper .BornHS__Input {
