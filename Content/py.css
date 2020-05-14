@@ -480,18 +480,26 @@ input::-ms-input-placeholder { /* Microsoft Edge */
         position: relative;
     }
 
-    .BornHS__Wrapper .BornHS__Modal__Content {
-        background: #131313;
-        border-radius: 5px;
-        box-shadow: 0 0 24px rgba(0, 0, 0, 0.22);
-        color: #fff;
-        opacity: 0;
-        position: absolute;
-        transition: all 0.3s ease-in-out;
-        visibility: hidden;
-        width: 360px;
-        z-index: 4;
-    }
+        .BornHS__Wrapper .Content__Wrapper ul {
+            font-size: 14px;
+            text-align: justify;
+            padding-left: 10px;
+        }
+
+    
+
+        .BornHS__Wrapper .BornHS__Modal__Content {
+            background: #131313;
+            border-radius: 5px;
+            box-shadow: 0 0 24px rgba(0, 0, 0, 0.22);
+            color: #fff;
+            opacity: 0;
+            position: absolute;
+            transition: all 0.3s ease-in-out;
+            visibility: hidden;
+            width: 360px;
+            z-index: 4;
+        }
 
         .BornHS__Wrapper .BornHS__Modal__Content .Content__Wrapper {
             padding: 20px;
