@@ -820,7 +820,7 @@ var json = {
                             ]
                         }
                     ],
-                    visibleIf: "{question1} = 'item1'",
+                    visibleIf: "{question1} = 'yes'",
                     title: "Pet"
                 },
                 {
@@ -876,7 +876,7 @@ var json = {
                             ]
                         }
                     ],
-                    visibleIf: "{question2} = 'item1'",
+                    visibleIf: "{question2} = 'yes'",
                     title: "Garden"
                 },
                 {
@@ -932,7 +932,7 @@ var json = {
                             ]
                         }
                     ],
-                    visibleIf: "{question3} = 'item1'",
+                    visibleIf: "{question3} = 'yes'",
                     title: "Water resources"
                 }
             ]
