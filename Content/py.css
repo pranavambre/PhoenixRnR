@@ -92,6 +92,7 @@
     width: 33.33%;
     margin-right: 20px;
     background: #fff;
+    height:fit-content;
 }
 .form-register .steps li:last-child {
 	margin-right: 0;
@@ -127,7 +128,7 @@
     color: #fff;
     font-size: 12px;
     background: #ccc;
-    padding: 15px;
+    padding: 10px;
     margin: 0;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -151,15 +152,25 @@
     .form-register .steps li.current a .step-icon,
     .form-register .steps li.current a:active .step-icon {
         background: #5487FA;
+        padding:10px;
     }
 
+        .form-register .steps li.current a .step-icon .fa,
+        .form-register .steps li.current a:active .step-icon .fa {
+            font-size: 20px;
+        }
 
-    .form-register .steps li a .step-text {
-        color: #333;
-        font-size: 14px;
-        font-weight: 400;
-        padding: 10px;
-    }
+        .step-icon .fa {
+            font-size:20px;
+        }
+
+
+        .form-register .steps li a .step-text {
+            color: #333;
+            font-size: 13px;
+            font-weight: 400;
+            padding: 10px;
+        }
 .form-register .content {
 	padding:  0 50px;
 }
@@ -2247,6 +2258,10 @@ sv-footer__next-btn {
             text-align: center;
         }
 
+        .step-icon .fa {
+            font-size:15px;
+        }
+
         .post-entry {
             text-align: center;
         }
@@ -2313,7 +2328,8 @@ sv-footer__next-btn {
     margin-top: 0;
     font-size: 20px;
     padding: 10px;
-    text-align: center
+    text-align: center;
+    font-family: "Dosis", sans-serif;
 }
 
 .service-card {
@@ -2356,7 +2372,17 @@ sv-footer__next-btn {
     .slider-wrapper {
         border-radius: 0;
     }
-
+    .form-register .steps {
+        padding: 15px 8px 0px;
+    }
+    .actions ul li a{
+        font-size:12px;
+    }
+    .finish {
+        color: #fff;
+        padding: 8px 40px;
+        font-size: 12px;
+    }
     .marker2 {
         top: 30%;
         left: 77%;
@@ -2403,7 +2429,7 @@ sv-footer__next-btn {
 
     .form-register .steps li a .title .step-icon {
         font-size: 10px;
-        padding: 12px;
+        padding: 6px;
     }
 
     .form-heading_p {
