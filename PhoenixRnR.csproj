@@ -1018,6 +1018,7 @@
     <Content Include="Scripts\popper.js" />
     <Content Include="Scripts\popper.min.js" />
     <Content Include="Scripts\postcode.js" />
+    <Content Include="Scripts\postcode_name.js" />
     <Content Include="Scripts\py.js" />
     <Content Include="Scripts\src\index.js" />
     <Content Include="Scripts\src\methods\defaults.js" />

@@ -5,23 +5,62 @@
 }
 
 <style>
-    
-#DataTables_Table_0_wrapper {
-    margin-top: 10%;
-}
-.bg-dark{
-    background-color: #343a40 !important;
-    top: 0px;
-}
 
+    #DataTables_Table_0_wrapper .row:first-child {
+        padding-top: 15px;
+    }
+
+    #DataTables_Table_0_wrapper {
+        padding-left: 30px;
+        padding-bottom:15px;
+    }
+
+    .bg-dark {
+        background-color: #343a40 !important;
+        top: 0px;
+    }
+
+    div.dataTables_wrapper div.dataTables_length label {
+        float: left;
+    }
+
+    div.dataTables_wrapper div.dataTables_filter label {
+        float: right;
+    }
+
+    div.dataTables_wrapper div.dataTables_paginate {
+        float: right;
+    }
+
+    li {
+        padding: 2px;
+    }
+
+    .tablediv {
+
+        background-color: #ffca55;
+        margin-top: 8%;
+        padding-right: 15px;
+        border-radius: 10px;
+        margin-bottom: 2%;
+    }
+
+  .tablediv p{
+      font-size:25px;
+      padding-left:0px;
+      padding-top:15px;
+      text-align:center;
+  }
 </style>
+
 
 <link href="~/Content/DataTables/css/dataTables.bootstrap.min.css" rel="stylesheet" />
 <link href="~/Content/vetclinic.css" rel="stylesheet" />
 
-<div class="container">
+<div class="container tablediv">
+    <p>Search nearby vet clinics</p>
     <table class="table table-striped table-bordered nowrap" style="width:100%;">
-        <thead>
+        <thead class="" style="background-color:#323232; color:#fff;">
             <tr>
                 <th>
                     @Html.DisplayNameFor(model => model.Clinic_Name)
@@ -32,7 +71,7 @@
                 <th>
                     @Html.DisplayNameFor(model => model.PostCode)
                 </th>
-               
+
             </tr>
         </thead>
         <tbody>
@@ -48,21 +87,27 @@
                     <td>
                         @Html.DisplayFor(modelItem => item.PostCode)
                     </td>
-                    
+
                 </tr>
             }
         </tbody>
     </table>
 </div>
+
+
 @section Scripts {
+    @*<script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>*@
+    
     @Scripts.Render("~/Scripts/DataTables/jquery.dataTables.js")
     @Scripts.Render("~/Scripts/DataTables/dataTables.bootstrap.js")
+
     <script>
         $(document).ready(function () {
             $('.table').DataTable();
         });
 
     </script>
-    
+
 
 }

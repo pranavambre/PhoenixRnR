@@ -10,6 +10,10 @@
       href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
       integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
       crossorigin>
+<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/LeaVerou/awesomplete/gh-pages/awesomplete.css">
+<style>
+   
+</style>
 <style>
     #map {
         width: 100%;
@@ -17,7 +21,7 @@
         box-shadow: 0 3px 40px 0 rgba(0, 0, 0, .15);
         margin: 0 auto;
         margin-top: 15px;
-        position:sticky !important;
+        position: sticky !important;
     }
 
     body {
@@ -96,7 +100,7 @@
 
 
     .text {
-        width: 20%;
+        width: 100%;
         height: 40px;
         padding: 9px;
         color: orange;
@@ -107,6 +111,10 @@
         text-transform: capitalize;
         outline: none;
         display: inline;
+    }
+
+    #awesomplete_list_1 {
+        text-align:left;
     }
 
     ::-webkit-input-placeholder {
@@ -214,8 +222,11 @@
         <div class="searchinput col-lg-12">
             <div>
                 <p>Find your suburbs severity level predicted from the past 10 years bushfire data of Victoria</p>
-                <input type="text" name="q" id="postcode" placeholder="Enter postcode" class="text" required />
+                @*<input type="text" maxlength="4" id="postcode" placeholder="Enter postcode" class="awesomplete text" required  />*@
+                <input type="text" id="postcode" maxlength="4" placeholder="Please enter your postcode or choose one from prompts" class="awesomplete text">
                 <button type="submit" onclick="zoomToPostCode()" class="submit"><i class="fas fa-search"></i></button>
+                <input type="text" value="The postcode must be 4 digits" class="errormsg hide" id="errormsg1">
+                <input type="text" value="Please enter the postcode for Victoria" class="errormsg hide" id="errormsg2">
             </div>
         </div>
         <div class="col-lg-12">
@@ -236,9 +247,12 @@
 
 
 
-<script type="text/javascript" src="~/Scripts/postcode.js"></script>>
+<script type="text/javascript" src="~/Scripts/postcode.js"></script>
+<script src="~/Scripts/postcode_name.js"></script>
+
 <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
 <script src="https://kit.fontawesome.com/57456f662e.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.rawgit.com/LeaVerou/awesomplete/gh-pages/awesomplete.min.js"></script>
 <script type="text/javascript">
 
     var map = L.map("map").setView([-37, 145], 7);
@@ -370,16 +384,33 @@
         onEachFeature: onEachFeature,
     }).addTo(map);
 
+    var input = document.getElementById('postcode');
+    var awesomeplete = new Awesomplete(input, {
+        list: postcode_name,
+        minChars: 1
+    });
 
 
 
     function zoomToPostCode() {
-        var postcode = document.getElementById("postcode").value;
-        layer = layers[postcode];
-        map.fitBounds(layer.getBounds());
-        highlightLayer(layer);
-        sev = layer.feature.properties.fire_severity;
-        show_information(sev);
+        var postcode_str = document.getElementById("postcode").value;
+        postcode = postcode_str.slice(0, 4);
+        if (layers.hasOwnProperty(postcode)) {
+            document.getElementById('errormsg1').classList.add('hide');
+            document.getElementById('errormsg2').classList.add('hide');
+            layer = layers[postcode];
+            map.fitBounds(layer.getBounds());
+            highlightLayer(layer);
+            sev = layer.feature.properties.fire_severity;
+            show_information(sev);
+        } else if (isNaN(postcode)) {
+            document.getElementById('errormsg1').classList.remove('hide');
+            document.getElementById('errormsg2').classList.add('hide');
+        } else {
+            document.getElementById('errormsg1').classList.add('hide');
+            document.getElementById('errormsg2').classList.remove('hide');
+        }
+
     }
 
 
