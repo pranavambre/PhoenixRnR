@@ -1748,6 +1748,7 @@ article {
         .blacksummer .con {
             background-color: #d9d9d945;
             padding: 35px;
+            box-shadow: 0 3px 40px 0 rgba(0, 0, 0, .15);
         }
 
         .blacksummer .blackcon{

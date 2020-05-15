@@ -1125,6 +1125,7 @@
     <Content Include="Views\Home\FinalChecklist.cshtml" />
     <Content Include="Views\Home\SeverityMap.cshtml" />
     <Content Include="Views\Home\NearbyVetClinic.cshtml" />
+    <Content Include="Views\Home\KnowAboutBushfire.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

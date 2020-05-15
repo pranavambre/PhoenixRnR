@@ -32,6 +32,13 @@ namespace PhoenixRnR.Controllers
             return View();
         }
 
+        public ActionResult KnowAboutBushfire()
+        {
+            ViewBag.Message = "";
+
+            return View();
+        }
+
         public ActionResult NearbyVetClinic()
         {
             ViewBag.Message = "";
