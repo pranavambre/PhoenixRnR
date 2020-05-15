@@ -508,11 +508,11 @@ var json = {
                     isRequired: true,
                     choices: [
                         {
-                            value: "item1",
+                            value: "yes",
                             text: "Yes"
                         },
                         {
-                            value: "item2",
+                            value: "no",
                             text: "No"
                         }
                     ]
@@ -524,11 +524,11 @@ var json = {
                     isRequired: true,
                     choices: [
                         {
-                            value: "item1",
+                            value: "yes",
                             text: "Yes"
                         },
                         {
-                            value: "item2",
+                            value: "no",
                             text: "No"
                         }
                     ]
@@ -540,11 +540,11 @@ var json = {
                     isRequired: true,
                     choices: [
                         {
-                            value: "item1",
+                            value: "yes",
                             text: "Yes"
                         },
                         {
-                            value: "item2",
+                            value: "no",
                             text: "No"
                         }
                     ]

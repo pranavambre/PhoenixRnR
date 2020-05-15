@@ -32,11 +32,21 @@ namespace PhoenixRnR.Controllers
             return View();
         }
 
+        public ActionResult NearbyVetClinic()
+        {
+            ViewBag.Message = "";
+
+            return View(db.pranavs.ToList());
+        }
+
+
+
+
         public ActionResult Prepare()
         {
             ViewBag.Message = "Your page.";
 
-            return View(db.pranavs.ToList());
+            return View();
         }
 
         public ActionResult SeverityMap()
