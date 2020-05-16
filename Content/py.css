@@ -2166,6 +2166,9 @@ input:checked + .slide-container .nav label {
     padding: 10px;
     color: #2c2c2c;
 }
+.sv-panel .sv-row:not(:last-child) {
+    padding-bottom: 0;
+}
     .sv-row:not(:last-child) {
         padding-bottom: 0px;
         border:none;
