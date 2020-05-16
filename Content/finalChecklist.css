@@ -237,10 +237,11 @@ h4, h5 {
     }
 
 h1 {
-    font-size: 20px;
-    font-size: 20rem;
+    font-size: 25px;
+    /*font-size: 20rem;*/
     line-height: 1.6;
     font-weight: 700;
+    color:#555555;
 }
 
 h2 {
@@ -316,8 +317,8 @@ body, html {
 
 body {
     margin: 0;
-    background: -webkit-linear-gradient(top, #FCAA2C 0, #F58220 100%) fixed;
-    background: linear-gradient(to top, #FCAA2C 0, #F58220 100%) fixed;
+    /*background: -webkit-linear-gradient(top, #FCAA2C 0, #F58220 100%) fixed;
+    background: linear-gradient(to top, #FCAA2C 0, #F58220 100%) fixed;*/
     font-family: adelle-sans, Avenir, Helvetica, Arial, sans-serif;
     font-size: 16px;
     font-size: 16rem;
@@ -351,7 +352,7 @@ ul, ul li {
         display: block;
         margin: 0 auto;
         padding:0px 0px 15px 0px;
-        max-width: 80%;
+        max-width: 100%;
         background: #fff;
         box-shadow: 0 3px 40px 0 rgba(0, 0, 0, .15);
         margin-bottom:15px;
@@ -361,8 +362,8 @@ ul, ul li {
     background: #003162;
     text-align: center;
     color: #FFF;
-    font-size: 12px;
-    font-size: 12rem;
+    font-size: 25px;
+ 
     line-height: 1.3;
     text-transform: uppercase;
     padding: 20px 0;
@@ -476,7 +477,7 @@ ul {
     background: #339dff;
     color: #fff;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 16px;
     line-height: 38px;
     border-radius: 50px;
     -webkit-transition: all 0.3s;

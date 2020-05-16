@@ -3,35 +3,36 @@
     ViewBag.Title = "GetYourChecklist";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-    <style>
+<style>
 
-        .sv-footer__complete-btn {
-            display: block;
-        }
+    .sv-footer__complete-btn {
+        display: block;
+    }
 
-        sv-footer__next-btn {
-            display: block !important;
-        }
+    sv-footer__next-btn {
+        display: block !important;
+    }
 
-        .block-30.block-30-sm .heading {
-            font-size: 47px;
-            margin-top: 40%;
-        }
-        .sv-completedpage:before {
-            background-image:url(../../images/thumbs-up-black-removebg-preview.png);
+    .block-30.block-30-sm .heading {
+        font-size: 47px;
+        margin-top: 40%;
+    }
 
-        }
+    .sv-completedpage:before {
+        background-image: url(../../images/thumbs-up-black-removebg-preview.png);
+    }
 
-        .checklistdiv p{
-            font-family: "Dosis", sans-serif;
-                font-size: 28px;
-    text-align: center;
-        }
-    </style>
-    <link href="~/Content/py.css" rel="stylesheet" />
+    .checklistdiv p {
+        font-family: "Dosis", sans-serif;
+        font-size: 28px;
+        text-align: center;
+    }
+</style>
+
 <script src="https://unpkg.com/jquery"></script>
 <script src="https://surveyjs.azureedge.net/1.7.4/survey.jquery.js"></script>
 <link href="https://surveyjs.azureedge.net/1.7.4/modern.css" type="text/css" rel="stylesheet" />
+<link href="~/Content/py.css" rel="stylesheet" />
 <div class="block-31" style="position: relative;">
     <div class="owl-carousel loop-block-31 ">
         <div class="block-30 block-30-sm item" style="background-image: url('../../images/checklist_bg.jpg'); background-position: 0% 0px;" data-stellar-background-ratio="0.5">
@@ -47,7 +48,7 @@
 </div>
 
 
-<div class="checklistdiv">
+<div class="checklistdiv container">
     <p>Set your preferences for generating a customised checklist, which will help you to evaluate your preparation.</p>
     <div id="surveyResult">
     </div>
@@ -58,9 +59,9 @@
 <script src="~/Scripts/py.js"></script>
 <script type="text/javascript" src="~/Scripts/checklist.js"></script>
 @*<script>
-    window.onload = function() {
-         alert('DOM is ready');
-       var classname =  document.getElementsByClassName("sv-footer__next-btn").value = "Generate checklist";
-        classname[0].setAttribute("value", "hello");
-  }
-</script>*@
+        window.onload = function() {
+             alert('DOM is ready');
+           var classname =  document.getElementsByClassName("sv-footer__next-btn").value = "Generate checklist";
+            classname[0].setAttribute("value", "hello");
+      }
+    </script>*@

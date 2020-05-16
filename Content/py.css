@@ -2106,7 +2106,7 @@ input:checked + .slide-container .nav label {
 }
 
 .checklistdiv {
-    width: 60%;
+    width: 80%;
     margin: 15px auto;
     border-radius: 10px;
     background: #ffca55;

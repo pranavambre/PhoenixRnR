@@ -4,13 +4,30 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <link href="~/Content/py.css" rel="stylesheet" />
+<style>
+    .container-crisismap {
+            background: #ffca55;
+            box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    -ms-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15); 
+        padding: 40px;
+margin-top:20px;
+border-radius:10px;
+margin-bottom:20px;
+    }
+    .container-crisismap h2{
+        text-align:center;
+    }
+</style>
 <div class="block-31" style="position: relative;">
     <div class="owl-carousel loop-block-31 ">
         <div class="block-30 block-30-sm item" style="background-image: url('../../images/bg_2.jpg'); background-position: 0% 0px;" data-stellar-background-ratio="0.5">
             <div class="container">
                 <div class="row align-items-center justify-content-center text-center">
-                    <div class="col-md-7">
-                        <h2 class="heading mb-5">Find nearby hospitals.</h2>
+                    <div class="col-md-8">
+                        <h2 class="heading mb-5">Find out the nearby hospitals around your location for any emergency during bushfire</h2>
 
                     </div>
                 </div>
@@ -21,18 +38,19 @@
 </div>
 
 
-
-<div class="container" id="nearbymap" style="margin-top:20px; padding:30px;">
-    <div class="row d-flex">
-        <div class="col-lg-12">
-            <h2>Nearby Hospitals</h2>
-            <div id="panel"></div>
-            <!-- Map appears here -->
-            <div id="map"></div>
+<div class="container-crisismap container">
+    <div class="container" id="nearbymap">
+        <div class="row d-flex">
+            <div class="col-lg-12">
+                <h2>Nearby Hospitals</h2>
+                <div id="panel"></div>
+                <!-- Map appears here -->
+                <div id="map"></div>
+            </div>
         </div>
     </div>
-</div>
-<script src="~/Scripts/map.js"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA94y2NAlkTLo3U1z3QfiriqZw8VgkLgHk&libraries=places&callback=initMap">
-</script>
-<script src="~/Scripts/py.js"></script>
+    </div>
+    <script src="~/Scripts/map.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA94y2NAlkTLo3U1z3QfiriqZw8VgkLgHk&libraries=places&callback=initMap">
+    </script>
+    <script src="~/Scripts/py.js"></script>
