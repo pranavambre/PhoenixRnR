@@ -30,26 +30,34 @@
     padding-top: 85px;
     padding-bottom: 55px;
 }
-.py-class  {
-	width: 80%;
-	box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
-	-o-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
-	-ms-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
-	-moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
-	-webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
-	border-radius: 10px;
-	-o-border-radius: 10px;
-	-ms-border-radius: 10px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	margin: auto;
-    margin-top:20px;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 18px;
-	font-weight: 400;
-	position: relative;
-	display: flex;
-	display: -webkit-flex;
+
+#flammable_mobile {
+    display:none;
+}
+#flammable_desktop {
+    display: block;
+}
+
+.py-class {
+    width: 80%;
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    -ms-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    margin: auto;
+    margin-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+    display: flex;
+    display: -webkit-flex;
 }
     .py-class .wizard-form {
         width: 100%;
@@ -1246,12 +1254,27 @@ article {
     height: 100%;
 }
 
-    .fundraise-item .custom-progress-success {
-        background-color: #f2f2f2;
-        height: .2rem;
-        border-radius: 4px;
-        margin-bottom: 20px;
+.waterresource_p {
+    margin-top: 0;
+    font-size: 25px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    text-align: center;
+    font-family: "Dosis", sans-serif;
+    display: contents;
+}
+
+    .finish {
+        width: 200px;
+        border-radius: 20px;
     }
+
+.fundraise-item .custom-progress-success {
+    background-color: #f2f2f2;
+    height: .2rem;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
 
     .fundraise-item a {
         color: #000;
@@ -1829,7 +1852,7 @@ article {
 }
 
     .services-wrap .services-list {
-        font-size: 13px;
+        font-size: 14px;
         margin-bottom: 20px;
         padding: 20px 30px;
         background: #fff;
@@ -1841,6 +1864,7 @@ article {
         -moz-box-shadow: 0px 10px 30px -4px rgba(0, 0, 0, 0.15);
         box-shadow: 0px 10px 30px -4px rgba(0, 0, 0, 0.15);
     }
+
 
 @media (max-width: 767.98px) {
     .services-wrap .services-list {
@@ -2327,7 +2351,7 @@ sv-footer__next-btn {
 
 .form-heading_p {
     margin-top: 0;
-    font-size: 20px;
+    font-size: 28px;
     padding: 10px;
     text-align: center;
     font-family: "Dosis", sans-serif;
@@ -2358,6 +2382,9 @@ sv-footer__next-btn {
     .slider-wrapper {
         border-radius: 0;
     }
+    #flammable_desktop {
+        display: block;
+    }
 
     .form-register .steps li a .title .step-icon {
         font-size: 14px;
@@ -2372,6 +2399,14 @@ sv-footer__next-btn {
 @media only screen and (max-width: 450px) {
     .slider-wrapper {
         border-radius: 0;
+    }
+    #flammable_mobile {
+        display:block;
+        width:80%;
+        margin:0 auto;
+    }
+    #flammable_desktop{
+        display:none;
     }
     .form-register .steps {
         padding: 15px 8px 0px;
@@ -2513,7 +2548,7 @@ sv-footer__next-btn {
     }
 
     ul.slides {
-        height: 120px;
+        height: 600px;
     }
 
     .btn-custom {

@@ -467,9 +467,10 @@
     <Content Include="images\advice-removebg-preview.png" />
     <Content Include="images\back_video.mp4" />
     <Content Include="images\battery.png" />
+    <Content Include="images\Bedroom.jpg" />
+    <Content Include="images\Bedroom_mobile.jpg" />
     <Content Include="images\bg3.jpg" />
     <Content Include="images\advice.png" />
-    <Content Include="images\Bedroom.jpg" />
     <Content Include="images\bg_1.jpg" />
     <Content Include="images\bg_2.jpg" />
     <Content Include="images\blanket.png" />
@@ -493,7 +494,8 @@
     <Content Include="images\finalchecklist1.jpg" />
     <Content Include="images\Fireproof.jpg" />
     <Content Include="images\food.png" />
-    <Content Include="images\Garage_Deck area.jpg" />
+    <Content Include="images\Garage_Deck.jpg" />
+    <Content Include="images\Garage_mobile.jpg" />
     <Content Include="images\garden1.jpeg" />
     <Content Include="images\garden2.jpeg" />
     <Content Include="images\garden3.jpg" />
@@ -507,6 +509,7 @@
     <Content Include="images\hoses_enough.jpg" />
     <Content Include="images\keeplawnwatered.jpg" />
     <Content Include="images\kit.png" />
+    <Content Include="images\Kitchen_mobile.jpg" />
     <Content Include="images\Kitchen_Laundry.jpg" />
     <Content Include="images\lamp-removebg-preview.png" />
     <Content Include="images\landscape-clipart-hedge-cutting.png" />

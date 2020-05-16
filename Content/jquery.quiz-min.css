@@ -1,7 +1,7 @@
 body {
     margin: 0;
-    background: -webkit-linear-gradient(top, #FCAA2C 0, #F58220 100%) fixed;
-    background: linear-gradient(to top, #FCAA2C 0, #F58220 100%) fixed;
+    /*background: -webkit-linear-gradient(top, #FCAA2C 0, #F58220 100%) fixed;
+    background: linear-gradient(to top, #FCAA2C 0, #F58220 100%) fixed;*/
     font-family: adelle-sans, Avenir, Helvetica, Arial, sans-serif;
     font-size: 16px;
     
@@ -91,7 +91,7 @@ body {
     background: #339dff;
     color: #fff;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 18px;
     line-height: 38px;
     border-radius: 50px;
     -webkit-transition: all 0.3s;
@@ -141,4 +141,16 @@ header {
     padding:20px 0;
     font-weight: 700;
     
+}
+@media only screen and (max-width: 450px){
+    .question {
+        font-size: 15px;
+        text-align: center;
+    }
+    header {
+        font-size: 20px;
+    }
+    .answers a{
+        font-size:12px;
+    }
 }

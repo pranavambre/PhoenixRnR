@@ -7,6 +7,26 @@
 
 <title>Customizable Dynamic Quiz Basic Demo</title>
 <link rel="stylesheet" type="text/css" href="~/Content/jquery.quiz-min.css" />
+<style>
+    header{
+        font-size:25px;
+    }
+    #quiz-start-screen p{
+        font-size:20px;
+    }
+    .quiz_container{
+     background: #ffca55;
+      box-shadow: 0 3px 40px 0 rgba(0, 0, 0, .15);
+    padding: 15px;
+    border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    margin-bottom:10px;
+    margin-top:10px;
+    }
+</style>
 
 <div class="block-31" style="position: relative;">
     <div class="owl-carousel loop-block-31 ">
@@ -34,16 +54,17 @@
         <div class="jquery-script-clear"></div>
     </div>
 </div>
-<div class="container">
+<div class="container quiz_container">
     <h1 style="text-align:center;"></h1>
     <div id="quiz">
         @*<div id="quiz-header">
             <h1>Bushfire Quiz</h1>
 
         </div>*@
-        <header>Bushfire ready quiz</header>
+        <header>Bushfire quiz</header>
         <div id="quiz-start-screen">
-            <p><a href="#" id="quiz-start-btn" class="quiz-button">Start</a></p>
+            <p>Bushfire is a common natural disaster in Australia. Check your knowledge about the general facts related to bushfire.</p>
+            <p><a href="#" id="quiz-start-btn" class="quiz-button">Play Quiz</a></p>
         </div>
     </div>
 </div>
@@ -57,7 +78,7 @@
         counterFormat: 'Question %current of %total',
         questions: [
             {
-                'q': 'There are three types of bushfire warnings. Which is the most urgent??',
+                'q': 'Which are the most urgent types of bushfire warnings?',
                 'options': [
                     'Bushfire Advice',
                     'Bushfire Emergency',
@@ -69,7 +90,7 @@
                 'incorrectResponse': 'Incorrect. Bushfire Emergency is the most urgent level of warning. A Watch and Act is the second level of warning. A Watch and Act warning means an emergency is heading towards you and conditions are changing and you need to take action now to protect yourself and your family.'
             },
             {
-                'q': 'Make sure your bushfire survival kit is ready and you know of its location. What are some items you should include in your kit?',
+                'q': 'What are some items you should include in your bushfire survival kit?',
                 'options': [
                     'Battery-powered or wind-up radio',
                     'Waterproof torch',
@@ -93,18 +114,17 @@
                 'incorrectResponse': 'Incorrect, but an extra pair of hands can help. Fire agencies say defending your home requires at least two able-bodied, fit and determined adults. Both adults need to be sure they are physically and mentally prepared to work in difficult conditions. But, homes in an area with a Code Red or Catastrophic fire danger rating are difficult to defend, even if well prepared.'
             },
             {
-                'q': 'How many litres of water are recommended to have on hand if you stay and defend your home?',
+                'q': 'Who are the people you need to inform about leaving early?',
                 'options': [
-                    '1,000',
-                    '5,000',
-                    '10,000'
+                    'No one - only me',
+                    'Only adults',
+                    'Everyone at the house'
                 ],
                 'correctIndex': 2,
-                'correctResponse': 'Correct. It is recommended that you have 10,000 litres of water for firefighting purposes as well as a firefighting pump and hoses. Other equipment needed includes a water sprayer, bucket, mop, shovel, torch and battery-powered radio. But remember, homes in an area with a Code Red or Catastrophic fire danger rating are difficult to defend, even if well prepared.',
-                'incorrectResponse': 'Incorrect. It is recommended that you have 10,000 litres of water for firefighting purposes as well as a firefighting pump and hoses. Other equipment needed includes a water sprayer, bucket, mop, shovel, torch and battery-powered radio. But remember, homes in an area with a Code Red or Catastrophic fire danger rating are difficult to defend, even if well prepared.'
-            },
+                'correctResponse': 'Correct. For leaving early, you must inform all the members at the house about the plan. Every member should be informed about the leaving date, time and destination.',
+                'incorrectResponse': 'Incorrect. For leaving early, you must inform all the members at the house about the plan. Every member should be informed about the leaving date, time and destination. You need to give extra attention to the kids and elder people because they need more support mentally.'    },
             {
-                'q': 'When should you work out your bushfire emergency plan',
+                'q': 'When should you start preparing for your bushfire leaving early plan?',
                 'options': [
                     'Around November as temperatures start to rise',
                     'Work out where you’re going on the day',
@@ -127,25 +147,28 @@
                 'incorrectResponse': 'Incorrect, but you’re on the right track. If someone is affected by heatstroke you should move them to a shaded area and try to cool them down. Call 000 and seek assistance immediately. Radiant heat kills very quickly. The human body cannot absorb large amounts of radiant heat or withstand extremely high temperatures. Radiant heat causes death from heatstroke where the body cooling system fails, leading to heat exhaustion and heart failure.'
             },
             {
-                'q': 'When a bushfire is approaching your property, what should you never do?',
+                'q': 'When can an ember attack happen?',
                 'options': [
-                    'Stay and fight the fire',
-                    'Wait and see how close the fire gets',
-                    'Leave'
+                    'Before the bushfire',
+                    'After the bushfire',
+                    'During the bushfire',
+                    ' All of the above'
                 ],
-                'correctIndex': 1,
-                'correctResponse': 'Correct! Never wait and see. Whichever decision you make, either to stay and defend, or leave early, make it part of your bushfire plan. The longer you wait to leave, the greater the risk to your life.',
-                'incorrectResponse': 'In the end its up to you whether you stay and defend or leave. But you should never wait and see. Whichever decision you make, incorporate it into your bushfire plan. The longer you wait to leave, the greater the risk to your life.'
+                'correctIndex': 3,
+                'correctResponse': 'Correct. Embar attack can happen any time, before, during and after the bushfire. This is the most common way houses catch fire. So, seal your house, clean your garden and backyard for being safe.',
+                'incorrectResponse': 'Incorrect. Embar attack can happen any time, before, during and after the bushfire. This is the most common way houses catch fire. So, seal your house, clean your garden and backyard for being safe.'
             },
             {
-                'q': 'Leaving when a bushfire has arrived is extremely dangerous and deadly, but if you have no other option where could you shelter?',
+                'q': 'Protective clothes should not be made of what material?',
                 'options': [
-                    'A dam or river',
-                    'In a water tank'
+                    'Wool ',
+                    'Cotton',
+                    'Denim',
+                    'Synthetics'
                 ],
-                'correctIndex': 0,
-                'correctResponse': 'Correct! It is recommended you seek shelter in a well-prepared home that can be actively defended, from a private bunker that is built to regulation, or at a community shelter or refuge. Radiant heat can be blocked by a solid object such as a concrete wall or building which creates a barrier between you and the fire. If you have no other option you can go to your local place of last resort, a ploughed paddock or the beach, dam or river, but dont shelter in water tanks.',
-                'incorrectResponse': 'Incorrect. It is recommended you seek shelter in a well-prepared home that can be actively defended, from a private bunker that is built to regulation, or at a community shelter or refuge. Radiant heat can be blocked by a solid object such as a concrete wall or building which creates a barrier between you and the fire. If you have no other option you can go to your local place of last resort, a ploughed paddock or the beach, dam or river, but dont shelter in water tanks.'
+                'correctIndex': 3,
+                'correctResponse': 'Correct. Protective clothes should be made from 100% natural fibers like wool, cotton or denim. Must avoid synthetics materials. The clothes should be loose-fitting, covering all exposed skin. ',
+                'incorrectResponse': ' Incorrect. Protective clothes should be made from 100% natural fibers like wool, cotton or denim. Must avoid synthetics materials. The clothes should be loose-fitting, covering all exposed skin.'
             }
 
             ,
