@@ -6,8 +6,32 @@
       position:absolute;
   }
     .block-30.block-30-sm .heading {
-    font-size: 80px;
+    font-size: 47px;
     /*margin-bottom: 20px;*/
+}
+    a.button{
+  display:inline-block;
+	
+	font:normal normal 300 30px 'Dosis';
+	text-decoration:none;	
+	
+	color:rgb(255, 255, 255);
+	background-color:transparent;
+	border:1px solid rgb(255, 255, 255);
+	border-radius:100px;
+	
+	padding: .3em 1.2em;
+	margin:5px;
+			
+	background-size: 200% 100%;	
+	background-image: linear-gradient(to right, transparent 50%, #f58220 50%);
+	transition: background-position .3s cubic-bezier(0.19, 1, 0.22, 1) .1s, color .5s ease 0s, background-color .5s ease;
+}
+
+    a.button:hover{
+	color:rgba(255, 255, 255, 1);
+	background-color:#f58220;
+	background-position: -100% 100%;
 }
     
 </style>
@@ -42,8 +66,8 @@
            
             <div class="container content">
                 <div class="row align-items-center justify-content-center text-center">
-                    <div class="col-md-8">
-                        <h1 class="heading mb-5">Be prepared for next bushfire.</h1>
+                    <div class="col-md-9">
+                        <h1 class="heading mb-5">1.7 million house addresses in Victoria are located in bushfire risky areas.<br /> Is your home one of those? <br /><a class="button" href="/Home/SeverityMap" title="Yes, turtles.">Find out!</a></h1>
                     </div>
                 </div>
             </div>

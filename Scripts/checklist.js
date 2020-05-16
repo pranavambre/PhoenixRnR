@@ -983,8 +983,8 @@ survey
            
             //document.getElementById("surveyResult").style.border = "1px solid rgba(0, 0, 0, 0.4)";
             //document.getElementById("surveyResult").style.boxShadow = "0 3px 40px 0 rgba(0, 0, 0, 0.15)";
-           
 
+            document.getElementById("msg_checklist").style.display = "none";
 
             document
                 .querySelector('#surveyResult')
@@ -997,6 +997,7 @@ survey
            
             //document.getElementById("surveyResult").style.border = "1px solid rgba(0, 0, 0, 0.4)";
             //document.getElementById("surveyResult").style.boxShadow = "0 3px 40px 0 rgba(0, 0, 0, 0.15)";
+            document.getElementById("msg_checklist").style.display = "none";
             document
                 .querySelector('#surveyResult')
                 .innerHTML = "Your total score is " + JSON.stringify(finalscore) + "%." + " You are fully ready to leave early. Do check the <a href='/Home/FinalChecklist' style='color:#5487FA'>last minute checklist </a> before leaving.";
