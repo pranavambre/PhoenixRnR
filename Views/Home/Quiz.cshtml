@@ -8,23 +8,26 @@
 <title>Customizable Dynamic Quiz Basic Demo</title>
 <link rel="stylesheet" type="text/css" href="~/Content/jquery.quiz-min.css" />
 <style>
-    header{
-        font-size:25px;
+
+    header {
+        font-size: 25px;
     }
-    #quiz-start-screen p{
-        font-size:20px;
+
+    #quiz-start-screen p {
+        font-size: 20px;
     }
-    .quiz_container{
-     background: #ffca55;
-      box-shadow: 0 3px 40px 0 rgba(0, 0, 0, .15);
-    padding: 15px;
-    border-radius: 10px;
-    -o-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    margin-bottom:10px;
-    margin-top:10px;
+
+    .quiz_container {
+        background: #ffca55;
+        box-shadow: 0 3px 40px 0 rgba(0, 0, 0, .15);
+        padding: 15px;
+        border-radius: 10px;
+        -o-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
     }
 </style>
 
@@ -58,9 +61,9 @@
     <h1 style="text-align:center;"></h1>
     <div id="quiz">
         @*<div id="quiz-header">
-            <h1>Bushfire Quiz</h1>
+                <h1>Bushfire Quiz</h1>
 
-        </div>*@
+            </div>*@
         <header>Bushfire quiz</header>
         <div id="quiz-start-screen">
             <p>Bushfire is a common natural disaster in Australia. Check your knowledge about the general facts related to bushfire.</p>
@@ -122,7 +125,8 @@
                 ],
                 'correctIndex': 2,
                 'correctResponse': 'Correct. For leaving early, you must inform all the members at the house about the plan. Every member should be informed about the leaving date, time and destination.',
-                'incorrectResponse': 'Incorrect. For leaving early, you must inform all the members at the house about the plan. Every member should be informed about the leaving date, time and destination. You need to give extra attention to the kids and elder people because they need more support mentally.'    },
+                'incorrectResponse': 'Incorrect. For leaving early, you must inform all the members at the house about the plan. Every member should be informed about the leaving date, time and destination. You need to give extra attention to the kids and elder people because they need more support mentally.'
+            },
             {
                 'q': 'When should you start preparing for your bushfire leaving early plan?',
                 'options': [
@@ -213,5 +217,5 @@
     })();
 
 </script>
-
+@Scripts.Render("~/bundles/jquery")
 

@@ -4,27 +4,20 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="~/Content/game.css">
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/utils/Draggable.min.js"></script>
 
+<link rel="stylesheet" href="~/Content/game.css">
 <style>
 
     body {
-        overflow-x: hidden;
+        /*overflow-x: hidden;*/
         //background-image: url(game_back.jpg);
         // background-repeat: no-repeat;
         //background-size: auto;
         background-color: gainsboro;
     }
+
     .ftco-navbar-light {
-        top:0;
+        top: 0;
     }
 </style>
 
@@ -42,10 +35,10 @@
                     <img class="img2" src="~/images/tv.png" draggable="true" ondragstart="drag()" alt="">
                 </div>
                 <div class="cookie col-lg-4 col-md-4  col-sm-4">
-                    <img class="img2" src="~/images/kit.png" draggable="true" ondragstart="dragIn()" alt="">
+                    <img class="img2" src="~/images/kit.png" alt="">
                 </div>
                 <div class="cookie col-lg-4 col-md-4 col-sm-4">
-                    <img class="img2" src="~/images/tourch.png" draggable="true" ondragstart="dragIn()" alt="">
+                    <img class="img2" src="~/images/tourch.png" alt="">
                 </div>
             </div>
             <div class="row">
@@ -111,13 +104,20 @@
         </div>
     </div>
 </div>
-<div class="correct">
-    <h1>Correct!</h1>
+<div class="container">
+    <div class="correct">
+        <h1>Correct!</h1>
+    </div>
+    <div class="incorrect">
+        <h1>Incorrect!</h1>
+    </div>
 </div>
-<div class="incorrect">
-    <h1>Incorrect!</h1>
-</div>
-
 <!--Game ends here-->
+<!-- jQuery library -->
 
+<!-- Latest compiled JavaScript -->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/utils/Draggable.min.js"></script>
 <script src="~/Scripts/Game.js"></script>

@@ -11,6 +11,9 @@
 }
 
 
+.bg-dark {
+    background-color: #343a40 !important;
+}
 
 .title {
     font-size: 32px;
@@ -45,12 +48,13 @@
 
 
 .container1 {
-    height: 60vh;
+    /*height: 60vh;*/
+    height:fit-content;
     margin: 0 auto;
     text-align: center;
-    display: flex;
+    /*display: flex;*/
     align-items: center;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     color: #000;
 }
 
@@ -74,8 +78,8 @@ h1 {
 }
 
 .cookie {
-    height: 20vh;
-    width: 20vh;
+    /*height: 20vh;
+    width: 20vh;*/
     margin: 0 auto;
     position: relative;
     /*   transition: filter 0.5s ease; */
@@ -108,8 +112,9 @@ filter: drop-shadow(0 -5px 10px rgba(0,0,0,0.5));
 .img2 {
     -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(5px 5px 5px #222);
-    max-width: 100%;
-    max-height: 100%;
+    /*max-width: 100%;
+    max-height: 100%;*/
+    width:100%;
 }
 
 .jar img {
@@ -129,6 +134,7 @@ filter: drop-shadow(0 -5px 10px rgba(0,0,0,0.5));
     background-repeat: no-repeat;
     margin: 0 auto;
     height: 100%;
+    width:100%;
 }
 
 .jar:after {

@@ -26,9 +26,10 @@ function dragCookie() {
             ? (skew = -9)
             : 0;
     if (this.hitTest(jar, "40%")) {
+       
         shakeJarAnimation().play();
         TweenMax.to(this.target, 0.3, { scale: 0.7, filter: "brightness(80%)" });
-        $('.correct').fadeIn(1000).stop().animate({ opacity: 0 }, 500).fadeOut(1000);
+        $('.correct').stop().fadeIn(1000).fadeOut(1000);
         console.log('blink once');
     } else {
         shakeJarAnimation().kill(0);

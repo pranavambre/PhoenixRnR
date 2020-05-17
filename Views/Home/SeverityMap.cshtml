@@ -12,7 +12,6 @@
       crossorigin>
 <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/LeaVerou/awesomplete/gh-pages/awesomplete.css">
 <style>
-   
 </style>
 <style>
     #map {
@@ -114,7 +113,7 @@
     }
 
     #awesomplete_list_1 {
-        text-align:left;
+        text-align: left;
     }
 
     ::-webkit-input-placeholder {
@@ -194,35 +193,35 @@
             color: #5487FA;
         }
 
-         .legend {
-            text-align: left;
-            line-height: 18px;
-            color: #555;
-            width: 135px;
-            font: 16px Arial, Helvetica, sans-serif;
-            background: white;
-            background: rgba(255, 255, 255, 0.8);
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-            border-radius: 5px;
-        }
+    .legend {
+        text-align: left;
+        line-height: 18px;
+        color: #555;
+        width: 135px;
+        font: 16px Arial, Helvetica, sans-serif;
+        background: white;
+        background: rgba(255, 255, 255, 0.8);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+    }
 
-         .oaerror{
-  width:80%;
-  background-color: #ffffff;
-  padding:20px;
-  border:1px solid #eee;
-  border-left-width:5px;
-  border-radius: 3px;
-  margin:10px auto;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-}
-         .danger{
-  border-left-color: #d9534f; /* Left side border color */
-  background-color: rgba(254, 17, 10, 0.1); /*Same color as the left border with reduced alpha to 0.1*/
-      border-color: #d9534f;
-}
+    .oaerror {
+        width: 80%;
+        background-color: #ffffff;
+        padding: 20px;
+        border: 1px solid #eee;
+        border-left-width: 5px;
+        border-radius: 3px;
+        margin: 10px auto;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+    }
 
+    .danger {
+        border-left-color: #d9534f; /* Left side border color */
+        background-color: rgba(254, 17, 10, 0.1); /*Same color as the left border with reduced alpha to 0.1*/
+        border-color: #d9534f;
+    }
 </style>
 
 <div class="block-31" style="position: relative;">
@@ -256,7 +255,7 @@
                 <input type="text" id="postcode" maxlength="4" placeholder="Please enter your postcode or choose one from prompts" class="awesomplete text">
                 <button type="submit" onclick="zoomToPostCode()" class="submit"><i class="fas fa-search"></i></button>
                 <input type="text" value="The postcode must be 4 digits" class="errormsg hide" id="errormsg1">
-                <input type="text"  value="Please enter the postcode for Victoria" class="oaerror danger errormsg hide" id="errormsg2">
+                <input type="text" value="Please enter the postcode for Victoria" class="oaerror danger errormsg hide" id="errormsg2">
             </div>
         </div>
         <div class="col-lg-12">
@@ -447,7 +446,7 @@
 
 
     var legend = L.control({ position: "bottomright" });
-     legend.onAdd = function(map) {
+    legend.onAdd = function (map) {
 
         var div = L.DomUtil.create("div", "legend");
         div.innerHTML =
@@ -503,3 +502,4 @@
     }
 
 </script>
+@Scripts.Render("~/bundles/jquery")
