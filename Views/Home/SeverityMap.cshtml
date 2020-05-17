@@ -193,6 +193,36 @@
         .risky a {
             color: #5487FA;
         }
+
+         .legend {
+            text-align: left;
+            line-height: 18px;
+            color: #555;
+            width: 135px;
+            font: 16px Arial, Helvetica, sans-serif;
+            background: white;
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+        }
+
+         .oaerror{
+  width:80%;
+  background-color: #ffffff;
+  padding:20px;
+  border:1px solid #eee;
+  border-left-width:5px;
+  border-radius: 3px;
+  margin:10px auto;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+         .danger{
+  border-left-color: #d9534f; /* Left side border color */
+  background-color: rgba(254, 17, 10, 0.1); /*Same color as the left border with reduced alpha to 0.1*/
+      border-color: #d9534f;
+}
+
 </style>
 
 <div class="block-31" style="position: relative;">
@@ -226,7 +256,7 @@
                 <input type="text" id="postcode" maxlength="4" placeholder="Please enter your postcode or choose one from prompts" class="awesomplete text">
                 <button type="submit" onclick="zoomToPostCode()" class="submit"><i class="fas fa-search"></i></button>
                 <input type="text" value="The postcode must be 4 digits" class="errormsg hide" id="errormsg1">
-                <input type="text" value="Please enter the postcode for Victoria" class="errormsg hide" id="errormsg2">
+                <input type="text"  value="Please enter the postcode for Victoria" class="oaerror danger errormsg hide" id="errormsg2">
             </div>
         </div>
         <div class="col-lg-12">
@@ -326,7 +356,7 @@
     function highlightLayer(layer) {
         layer.setStyle({
             weight: 5,
-            color: "#666",
+            color: "#23F2F5",
             dashArray: "",
             fillOpacity: 0.7
         });
@@ -417,30 +447,41 @@
 
 
     var legend = L.control({ position: "bottomright" });
+     legend.onAdd = function(map) {
 
-    legend.onAdd = function (map) {
-        var div = L.DomUtil.create("div", "info legend"),
-            grades = [0, 1, 5, 7],
-            labels = [],
-            from,
-            to;
+        var div = L.DomUtil.create("div", "legend");
+        div.innerHTML =
+            '    <i style="background: #CBE2B0"></i>Low (0-2)<br>' +
+            '    <i style="background: #EFF36D"></i>Medium (2-5)<br>' +
+            '    <i style="background: #EE3008"></i>High (5-7)<br>' +
+            '    <i style="background: #050100"></i>Very High (7+)';
 
-        for (var i = 0; i < grades.length; i++) {
-            from = grades[i];
-            to = grades[i + 1];
-
-            labels.push(
-                '<i style="background:' +
-                getColor(from + 0.01) +
-                '"></i> ' +
-                from +
-                (to ? "&ndash;" + to : "+")
-            );
-        }
-
-        div.innerHTML = labels.join("<br>");
         return div;
     };
+
+    //legend.onAdd = function (map) {
+    //    var div = L.DomUtil.create("div", "info legend"),
+    //        grades = [0, 1, 5, 7],
+    //        labels = [],
+    //        from,
+    //        to;
+
+    //    for (var i = 0; i < grades.length; i++) {
+    //        from = grades[i];
+    //        to = grades[i + 1];
+
+    //        labels.push(
+    //            '<i style="background:' +
+    //            getColor(from + 0.01) +
+    //            '"></i> ' +
+    //            from +
+    //            (to ? "&ndash;" + to : "+")
+    //        );
+    //    }
+
+    //    div.innerHTML = labels.join("<br>");
+    //    return div;
+    //};
 
     legend.addTo(map);
 
