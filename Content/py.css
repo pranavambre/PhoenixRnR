@@ -1,4 +1,4 @@
-
+    
 
 .page-content {
     width: 100%;
@@ -767,7 +767,7 @@ input::-ms-input-placeholder { /* Microsoft Edge */
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
-    background-color: tomato;
+    background-color: #000;
     transition: all 300ms;
 }
 
@@ -2206,6 +2206,10 @@ input:checked + .slide-container .nav label {
 }
 .sv-title {
     font-weight: 100;
+}
+
+.sv-panel__title {
+    font-weight:bold;
 }
 .sq-title-required {
     color: red;

@@ -3,6 +3,10 @@
     ViewBag.Title = "GetYourChecklist";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
+<script src="https://unpkg.com/jquery"></script>
+<script src="https://surveyjs.azureedge.net/1.7.4/survey.jquery.js"></script>
+<link href="https://surveyjs.azureedge.net/1.7.4/modern.css" type="text/css" rel="stylesheet" />
 <style>
 
     .sv-footer__complete-btn {
@@ -19,7 +23,7 @@
     }
 
     .sv-completedpage:before {
-        background-image: url(../../images/thumbs-up-black-removebg-preview.png);
+        background-image: url('../../images/thumbs-up-black-removebg-preview.svg');
     }
 
     .checklistdiv p {
@@ -27,12 +31,9 @@
         font-size: 28px;
         text-align: center;
     }
-  
 </style>
 
-<script src="https://unpkg.com/jquery"></script>
-<script src="https://surveyjs.azureedge.net/1.7.4/survey.jquery.js"></script>
-<link href="https://surveyjs.azureedge.net/1.7.4/modern.css" type="text/css" rel="stylesheet" />
+
 <link href="~/Content/py.css" rel="stylesheet" />
 <div class="block-31" style="position: relative;">
     <div class="owl-carousel loop-block-31 ">
@@ -50,7 +51,7 @@
 
 
 <div class="checklistdiv container">
-    <p id="msg_checklist">Set your preferences for generating a customised checklist, which will help you to evaluate your preparation.</p>
+    <p id="msg_checklist">Get your customised checklist to evaluate your prepartion plan.</p>
     <div id="surveyResult">
     </div>
     <div id="surveyElement"></div>

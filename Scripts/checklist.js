@@ -977,9 +977,12 @@ survey
         //    .innerHTML = "Total score: " + JSON.stringify(finalscore) + "%";
 
         if (finalscore <= 90) {
-
+            var s_img = document.getElementsByClassName("sv-completedpage")[0].before;
             var s = document.getElementsByClassName("sv-completedpage")[0];
             s.style.boxShadow = "none";
+            s.style.backgroundColor = "transparent";
+            s.style.border = 0;
+         
            
             //document.getElementById("surveyResult").style.border = "1px solid rgba(0, 0, 0, 0.4)";
             //document.getElementById("surveyResult").style.boxShadow = "0 3px 40px 0 rgba(0, 0, 0, 0.15)";
@@ -994,6 +997,8 @@ survey
 
             var s = document.getElementsByClassName("sv-completedpage")[0];
             s.style.boxShadow = "none";
+            s.style.backgroundColor = "transparent";
+            s.style.border = 0;
            
             //document.getElementById("surveyResult").style.border = "1px solid rgba(0, 0, 0, 0.4)";
             //document.getElementById("surveyResult").style.boxShadow = "0 3px 40px 0 rgba(0, 0, 0, 0.15)";
@@ -1007,6 +1012,11 @@ survey
 
 
 $("#surveyElement").Survey({ model: survey });
+document.getElementsByClassName("sv-footer__next-btn")[0].value = "Generate checklist";
+document.getElementsByClassName("sv-footer__complete-btn")[0].value = "Calculate score";
+
+
+
 
 //function saveSurveyToPdf(filename, surveyModel, pdfWidth, pdfHeight) {
 //    var options = {
