@@ -38,6 +38,13 @@ namespace PhoenixRnR.Controllers
 
             return View();
         }
+        public ActionResult Timeline()
+        {
+            ViewBag.Message = "";
+
+            return View();
+        }
+
 
         public ActionResult NearbyVetClinic()
         {

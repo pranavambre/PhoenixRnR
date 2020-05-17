@@ -40,6 +40,58 @@
              .BornHS__Wrapper .Content__Wrapper ul li{
             list-style:disc;
         }
+             /*MObile carousel*/
+             .device {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                margin-left: -15.5rem;
+                margin-top: -20rem;
+                width: 31rem;
+                background: #ffffff;
+                font-family: "Open Sans", Helvetica, Arial, sans-serif;
+                -webkit-box-shadow: -1px 24px 41px -6px rgba(0,0,0,0.27);
+                -moz-box-shadow: -1px 24px 41px -6px rgba(0,0,0,0.27);
+                box-shadow: -1px 24px 41px -6px rgba(0,0,0,0.27);
+             }
+
+            .planet {
+                margin: 40px;
+                position: relative;
+                width: 400px;
+                height: 200px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: left top;
+            }
+
+            .mountains{
+                margin: 40px;
+            position: relative;
+            width: 400px;
+            height: 200px;
+            right: 20px;
+             }
+            .paper{
+            margin: 30px;
+            position: relative;
+            width: 400px;
+            height: 220px;
+            }
+
+            .border {
+  position: absolute;
+  top: 30px;
+  left: 3px;
+  width: 320px;
+}
+            .lines {
+  position: absolute;
+  top: 88px;
+  width: 33%;
+  left: 64px;
+}
+
 
         </style>
     </head>
@@ -462,7 +514,63 @@
                     </div>
 
 
-                    <div id="flammable_mobile" class="carousel2">
+                    <div id="flammable_desktop" class="carousel1">
+                        <ul class="slides">
+                            <input type="radio" name="radio-buttons" id="img-1" checked />
+                            <li class="slide-container">
+                                <div class="slide-image">
+                                    <img class="desktop_img" src="~/images/Garage_Deck.jpg">
+                                    <img class="mobile_img" src="~/images/Garage_mobile.jpg">
+                                </div>
+                                <div class="carousel-controls">
+                                    <label for="img-3" class="prev-slide">
+                                        <span>&lsaquo;</span>
+                                    </label>
+                                    <label for="img-2" class="next-slide">
+                                        <span>&rsaquo;</span>
+                                    </label>
+                                </div>
+                            </li>
+                            <input type="radio" name="radio-buttons" id="img-2" />
+                            <li class="slide-container">
+                                <div class="slide-image">
+                                    <img class="desktop_img" src="~/images/Kitchen_Laundry.jpg">
+                                    <img class="mobile_img" src="~/images/Kitchen_mobile.jpg">
+                                </div>
+                                <div class="carousel-controls">
+                                    <label for="img-1" class="prev-slide">
+                                        <span>&lsaquo;</span>
+                                    </label>
+                                    <label for="img-3" class="next-slide">
+                                        <span>&rsaquo;</span>
+                                    </label>
+                                </div>
+                            </li>
+                            <input type="radio" name="radio-buttons" id="img-3" />
+                            <li class="slide-container">
+                                <div class="slide-image">
+                                    <img class="desktop_img" src="~/images/Bedroom.jpg">
+                                    <img class="mobile_img" src="~/images/Bedroom_mobile.jpg">
+                                </div>
+                                <div class="carousel-controls">
+                                    <label for="img-2" class="prev-slide">
+                                        <span>&lsaquo;</span>
+                                    </label>
+                                    <label for="img-1" class="next-slide">
+                                        <span>&rsaquo;</span>
+                                    </label>
+                                </div>
+                            </li>
+                            <div class="carousel-dots">
+                                <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+                                <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+                                <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+                            </div>
+                        </ul>
+                    </div>
+
+
+                    @*<div id="flammable_mobile" class="carousel2">
                         <ul class="slides">
                             <input type="radio" name="radio-buttons" id="img-11" checked />
                             <li class="slide-container">
@@ -512,59 +620,10 @@
                                 <label for="img-33" class="carousel-dot" id="img-dot-33"></label>
                             </div>
                         </ul>
-                    </div>
+                    </div>*@
 
-                    <div id="flammable_desktop" class="carousel1">
-                        <ul class="slides">
-                            <input type="radio" name="radio-buttons" id="img-1" checked />
-                            <li class="slide-container">
-                                <div class="slide-image">
-                                    <img src="~/images/Garage_Deck.jpg">
-                                </div>
-                                <div class="carousel-controls">
-                                    <label for="img-3" class="prev-slide">
-                                        <span>&lsaquo;</span>
-                                    </label>
-                                    <label for="img-2" class="next-slide">
-                                        <span>&rsaquo;</span>
-                                    </label>
-                                </div>
-                            </li>
-                            <input type="radio" name="radio-buttons" id="img-2" />
-                            <li class="slide-container">
-                                <div class="slide-image">
-                                    <img src="~/images/Kitchen_Laundry.jpg">
-                                </div>
-                                <div class="carousel-controls">
-                                    <label for="img-1" class="prev-slide">
-                                        <span>&lsaquo;</span>
-                                    </label>
-                                    <label for="img-3" class="next-slide">
-                                        <span>&rsaquo;</span>
-                                    </label>
-                                </div>
-                            </li>
-                            <input type="radio" name="radio-buttons" id="img-3" />
-                            <li class="slide-container">
-                                <div class="slide-image">
-                                    <img src="~/images/Bedroom.jpg">
-                                </div>
-                                <div class="carousel-controls">
-                                    <label for="img-2" class="prev-slide">
-                                        <span>&lsaquo;</span>
-                                    </label>
-                                    <label for="img-1" class="next-slide">
-                                        <span>&rsaquo;</span>
-                                    </label>
-                                </div>
-                            </li>
-                            <div class="carousel-dots">
-                                <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
-                                <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
-                                <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
-                            </div>
-                        </ul>
-                    </div>
+
+
 
 
 

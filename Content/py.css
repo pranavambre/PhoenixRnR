@@ -30,12 +30,11 @@
     padding-top: 85px;
     padding-bottom: 55px;
 }
-
-#flammable_mobile {
-    display:none;
+.desktop_img {
+    display:block;
 }
-#flammable_desktop {
-    display: block;
+.mobile_img {
+    display:none;
 }
 
 .py-class {
@@ -2246,7 +2245,7 @@ sv-footer__next-btn {
         }
 
         ul.slides {
-            height: 300px;
+            height: 600px;
         }
     }
 
@@ -2385,10 +2384,7 @@ sv-footer__next-btn {
     .slider-wrapper {
         border-radius: 0;
     }
-    #flammable_desktop {
-        display: block;
-    }
-
+  
     .form-register .steps li a .title .step-icon {
         font-size: 14px;
     }
@@ -2403,14 +2399,17 @@ sv-footer__next-btn {
     .slider-wrapper {
         border-radius: 0;
     }
-    #flammable_mobile {
-        display:block;
-        width:80%;
-        margin:0 auto;
+    .desktop_img {
+        display: none;
     }
-    #flammable_desktop{
-        display:none;
+
+    .mobile_img {
+        display: block;
     }
+
+   
+   
+
     .form-register .steps {
         padding: 15px 8px 0px;
     }
@@ -2551,8 +2550,9 @@ sv-footer__next-btn {
     }
 
     ul.slides {
-        height: 600px;
+        height: 950px;
     }
+   
 
     .btn-custom {
         visibility: hidden;
