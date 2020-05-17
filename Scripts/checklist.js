@@ -977,7 +977,7 @@ survey
         //    .innerHTML = "Total score: " + JSON.stringify(finalscore) + "%";
 
         if (finalscore <= 90) {
-            var s_img = document.getElementsByClassName("sv-completedpage")[0].before;
+            
             var s = document.getElementsByClassName("sv-completedpage")[0];
             s.style.boxShadow = "none";
             s.style.backgroundColor = "transparent";
@@ -988,10 +988,13 @@ survey
             //document.getElementById("surveyResult").style.boxShadow = "0 3px 40px 0 rgba(0, 0, 0, 0.15)";
 
             document.getElementById("msg_checklist").style.display = "none";
+            var msg = document.getElementsByClassName("sv-completedpage")[0];
+            msg.innerHTML = "Thank you for completing your checklist. <br>"
+            msg.innerHTML += "Your total score is <b> " + JSON.stringify(finalscore) + " %</b>." + " You are not fully ready. For preparing better check the <a href = '/Home/Prepare' style = 'color:#5487FA' >preparation steps.</a>";
 
-            document
-                .querySelector('#surveyResult')
-                .innerHTML = "Your total score is <b>" + JSON.stringify(finalscore) + "%</b>." + "  You are not fully ready. Please go to preparation steps <a href='/Home/Prepare' style='color:#5487FA'>Click here!</a>";
+        //    document
+        //        .querySelector('#surveyResult')
+        //        .innerHTML = "Your total score is <b>" + JSON.stringify(finalscore) + "%</b>." + "  You are not fully ready. Please go to preparation steps <a href='/Home/Prepare' style='color:#5487FA'>Click here!</a>";
         }
         else {
 
@@ -1003,9 +1006,13 @@ survey
             //document.getElementById("surveyResult").style.border = "1px solid rgba(0, 0, 0, 0.4)";
             //document.getElementById("surveyResult").style.boxShadow = "0 3px 40px 0 rgba(0, 0, 0, 0.15)";
             document.getElementById("msg_checklist").style.display = "none";
-            document
-                .querySelector('#surveyResult')
-                .innerHTML = "Your total score is " + JSON.stringify(finalscore) + "%." + " You are fully ready to leave early. Do check the <a href='/Home/FinalChecklist' style='color:#5487FA'>last minute checklist </a> before leaving.";
+            var msg = document.getElementsByClassName("sv-completedpage")[0];
+            msg.innerHTML = "Thank you for completing your checklist. <br>"
+            msg.innerHTML += "Your total score is <b> " + JSON.stringify(finalscore) + " %</b>." + " You are fully ready to leave early. Do check the <a href='/Home/FinalChecklist' style='color:#5487FA'>last minute checklist </a> before leaving.";
+
+            //document
+            //    .querySelector('#surveyResult')
+            //    .innerHTML = "Your total score is " + JSON.stringify(finalscore) + "%." + " You are fully ready to leave early. Do check the <a href='/Home/FinalChecklist' style='color:#5487FA'>last minute checklist </a> before leaving.";
 
         }
     });
