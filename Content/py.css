@@ -37,6 +37,10 @@
     display:none;
 }
 
+.mobile_pet{
+    display:none;
+}
+
 .py-class {
     width: 80%;
     box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
@@ -2411,8 +2415,44 @@ sv-footer__next-btn {
         display: block;
     }
 
-   
-   
+    .mobile_pet{
+        display:block;
+    }
+    .sv-panel .sv-question__title {
+        font-size: 12px;
+       
+    }
+    .checklistdiv p {
+     
+        font-size: 20px;
+    }
+        .sv-question__content {
+        font-size: 12px;
+        width: 65%;
+    }
+
+    .sv-title {
+        font-weight: 100;
+        font-size: 12px;
+    }
+
+    .sv-row > .sv-row__panel, .sv-row__question {
+        vertical-align: top;
+        white-space: normal;
+        min-width: 210px;
+    }
+    .sv-root-modern .sv-footer__prev-btn {
+      
+        margin-bottom: 13px;
+    }
+    .sv-completedpage {
+        font-size:12px;
+        height:300px;
+        height:fit-content;
+    }
+
+
+
 
     .form-register .steps {
         padding: 15px 8px 0px;
@@ -2476,7 +2516,7 @@ sv-footer__next-btn {
 
     .form-heading_p {
         padding: 10px;
-        font-size: 10px;
+        font-size: 13px;
     }
 
     .top5action {
