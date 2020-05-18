@@ -29,8 +29,8 @@ function dragCookie() {
        
         shakeJarAnimation().play();
         TweenMax.to(this.target, 0.3, { scale: 0.7, filter: "brightness(80%)" });
-        $('.correct').stop().fadeIn(1000).fadeOut(1000);
-        console.log('blink once');
+        $('#myModal1').stop().fadeIn(1500).fadeOut(1500);
+        //console.log('blink once');
     } else {
         shakeJarAnimation().kill(0);
         TweenMax.to(this.target, 0.3, {
@@ -45,7 +45,7 @@ function dragCookie() {
 
 
 function drag() {
-    $('.incorrect').stop().fadeIn(1500).fadeOut(1500);
+    $('#myModal2').stop().fadeIn(1500).fadeOut(1500);
 }
 
 function releaseCookie() {
