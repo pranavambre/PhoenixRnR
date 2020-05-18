@@ -29,13 +29,71 @@
             margin-bottom:0;
             padding-bottom:0;
         }
+
+        footer {
+            background-color:#26272b;
+             font-size:15px;
+               padding:45px 0 20px;
+  line-height:24px;
+  color:#fff;
+    
+ 
+        }
+
+        footer ol{
+            padding-left:0;
+                list-style: none;
+               
+        }
+        footer ul{
+            padding-left:0;
+        }
+        .footer_section{
+             text-align:left;
+             margin:0 auto;
+                 margin-left: 3rem !important;
+        }
+
+        .footer_section h3{
+            
+        }
+        #myModal{
+            color:#000;
+        }
+        .modal-body{
+            text-align:justify;
+        }
+
+        .modal-body p{
+            padding-bottom:10px;
+        }
+        .modal-body ol{
+            padding-left:18px;
+            margin-left:18px;
+            
+        }
+        .modal-body ol li {
+            list-style-type:decimal;
+        }
+
+        .modal-body ol li a{
+            color:#ffb100;
+        }
+
+        .disclaimer{
+            background-color:#FFBA22;
+        }
+
+        .firebreak_footer_row{
+            margin:auto;
+        }
     </style>
 
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
-            <a class="navbar-brand" href="/Home/Index"><img src="~/images/logo.png" style="width:40px;" />The FireBreak</a>
+            <a class="navbar-brand" href="/Home/Index"><img src="~/images/logo.png" style="width:40px;" />The <span style="color:#FFBA22;">FIREBREAK</span></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="oi oi-menu"></span> Menu
             </button>
@@ -117,7 +175,91 @@
         @RenderBody()
 
         <footer>
-            <p>&copy; @DateTime.Now.Year - All rights reserved | TheFireBreak Application</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-12 firebreak_footer_row">
+                        <div class="row">
+                            <div class="col-lg-2"><img src="~/images/logo.png" style="width:50px;" /></div>
+                            <div class="col-lg-10">
+                                <h2 style="color:#fff">THE <span style="color:#FFBA22;">FIREBREAK</span></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="footer_section">
+                            <h3>Quick links</h3>
+                            <ul>
+
+                                <li><a href="/Home/Prepare"><span class="ion-ios-arrow-forward mr-3"></span>Preparation steps</a></li>
+                                <li><a href="/Home/GetYourChecklist"><span class="ion-ios-arrow-forward mr-3"></span>Customise checklist</a></li>
+                                <li><a href="/Home/FinalChecklist"><span class="ion-ios-arrow-forward mr-3"></span>Final checklist</a></li>
+                                <li><a href="/Home/NearbyVetClinic"><span class="ion-ios-arrow-forward mr-3"></span>Nearby vet clinics</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="footer_section">
+                            <h3>Maps</h3>
+                            <ul>
+                                <li><a href="/Home/SeverityMap"><span class="ion-ios-arrow-forward mr-3"></span>Severity Map</a></li>
+                                <li><a href="/Home/Prepare"><span class="ion-ios-arrow-forward mr-3"></span>Alerts & Warning</a></li>
+                                <li><a href="/Home/GetYourChecklist"><span class="ion-ios-arrow-forward mr-3"></span>Nearby hospitals</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="footer_section">
+                            <h3>Games</h3>
+                            <ul>
+                                <li><a href="/Home/Game"><span class="ion-ios-arrow-forward mr-3"></span>Emergency kit game</a></li>
+                                <li><a href="/Home/Quiz"><span class="ion-ios-arrow-forward mr-3"></span>Quiz</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+                <p>
+                    &copy; @DateTime.Now.Year - All rights reserved | TheFireBreak Application |
+                    <a class="" href="" style="color:#FFBA22; border:0; font-size:12px;" data-toggle="modal" data-target="#myModal">
+                        Disclaimer
+                    </a>
+                </p>
+            
+            <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">DISCLAIMER</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <p>All the information presented in this website is taken from various sources. All the information related to the preparation plan is from state government websites. The used websites are listed below:</p>
+                            <ol>
+                                <li><a href="https://www.bbc.com/news/world-australia-50951043">BBC News, World Australia</a></li>
+                                <li><a href="https://www.cfa.vic.gov.au/home">Country Fire Authority (Victoria)</a></li>
+                                <li><a href="https://www.abc.net.au/news/">ABC News</a></li>
+                                <li><a href="https://www.theguardian.com/australia-news/2020/jan/19/bushfire-destroyed-homes-should-not-be-rebuilt-in-riskiest-areas-experts-say">The Guardian.com (Australian Bushfire news)</a></li>
+                                <li><a href="https://www.vic.gov.au/bushfire-recovery-programs-and-initiatives">Victoria State Govt. Bushfire Recovery Program</a></li>
+                                <li><a href="https://www.planning.vic.gov.au/policy-and-strategy/bushfire-protection/bushfire-protection-and-my-property">Victoria State Govt. Planning</a> </li>
+                                <li><a href="https://www.rfs.nsw.gov.au/">NSW Rural Fire Service</a></li>
+                            </ol>
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
     @*@Scripts.Render("~/bundles/jquery")*@

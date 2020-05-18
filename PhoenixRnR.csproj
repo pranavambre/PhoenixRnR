@@ -464,6 +464,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\site.css" />
     <Content Include="images\64361.png" />
+    <Content Include="images\9.jpg" />
     <Content Include="images\advice-removebg-preview.png" />
     <Content Include="images\back_video.mp4" />
     <Content Include="images\battery.png" />
