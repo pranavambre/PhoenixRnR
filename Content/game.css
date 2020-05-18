@@ -16,15 +16,16 @@
 }
 
 .title {
-    font-size: 32px;
+    font-size: 28px;
 }
 
     .title .title-part {
         font-weight: 600;
-        font-family: "Fredoka One", sans-serif;
+        font-family: "Dosis", sans-serif;
         text-transform: uppercase;
         display: block;
         color: #000;
+        text-align:center;
     }
 /*.title .title-part.line-1 {
   text-shadow: #ff6239 1px 1px, #ff6339 2px 2px, #ff643a 3px 3px, #ff663a 4px 4px, #ff673b 5px 5px, #ff683c 6px 6px, #ff693c 7px 7px;
@@ -36,6 +37,7 @@
     border-radius: 3px;
     display: none;
     color: #fff;
+    text-align:center;
 }
 
 .incorrect {
@@ -44,6 +46,7 @@
     border-radius: 3px;
     display: none;
     color: #fff;
+    text-align:center;
 }
 
 
@@ -70,11 +73,11 @@
 }
 
 
-h1 {
+h2 {
     text-align: center;
     font-family: "Caveat Brush", cursive;
     margin: 1.5% 0;
-    font-size: 3vw;
+    font-size: 24px;
 }
 
 .cookie {
@@ -148,3 +151,26 @@ filter: drop-shadow(0 -5px 10px rgba(0,0,0,0.5));
     z-index: -1;
     border-radius: 44% 30% / 50% 50%;
 }
+.download {
+    display: inline-block;
+    margin-right: 10px;
+    background: #339dff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 38px;
+    border-radius: 50px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    width: 170px;
+    text-align: center;
+    margin: 0 auto;
+    margin-right:10px;
+    margin-bottom:20px;
+}
+
+    .download:hover {
+        background: #fff;
+        color: #339dff;
+        box-shadow: 0 4px 4px rgba(83, 100, 255, 0.32);
+    }
