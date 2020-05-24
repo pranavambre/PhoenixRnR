@@ -4,7 +4,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - The FIREBREAK</title>
-
+    <link rel="icon"
+          type="image/png"
+          href="~/images/logo.png" />
     <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,500|Dosis:400,700" rel="stylesheet">
     <link rel="stylesheet" href="~/Content/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="~/Content/animate.css">
@@ -22,75 +24,78 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
-  
+
     <link href="~/Content/py.css" rel="stylesheet" />
     <style>
-        footer p{
-            margin-bottom:0;
-            padding-bottom:0;
+
+        footer p {
+            margin-bottom: 0;
+            padding-bottom: 0;
         }
 
         footer {
-            background-color:#26272b;
-             font-size:15px;
-               padding:45px 0 20px;
-  line-height:24px;
-  color:#fff;
-    
- 
+            background-color: #26272b;
+            font-size: 15px;
+            padding: 45px 0 20px;
+            line-height: 24px;
+            color: #fff;
         }
 
-        footer ol{
-            padding-left:0;
+            footer ol {
+                padding-left: 0;
                 list-style: none;
-               
-        }
-        footer ul{
-            padding-left:0;
-        }
-        .footer_section{
-             text-align:left;
-             margin:0 auto;
-                 margin-left: 3rem !important;
+            }
+
+            footer ul {
+                padding-left: 0;
+            }
+
+        .footer_section {
+            text-align: left;
+            margin: 0 auto;
+            margin-left: 3rem !important;
         }
 
-        .footer_section h3{
-            
-        }
-        #myModal{
-            color:#000;
-        }
-        .modal-body{
-            text-align:justify;
+            .footer_section h3 {
+            }
+
+        #myModal {
+            color: #000;
         }
 
-        .modal-body p{
-            padding-bottom:10px;
-        }
-        .modal-body ol{
-            padding-left:18px;
-            margin-left:18px;
-            
-        }
-        .modal-body ol li {
-            list-style-type:decimal;
+        .modal-body {
+            text-align: justify;
         }
 
-        .modal-body ol li a{
-            color:#ffb100;
+            .modal-body p {
+                padding-bottom: 10px;
+            }
+
+            .modal-body ol {
+                padding-left: 18px;
+                margin-left: 18px;
+            }
+
+                .modal-body ol li {
+                    list-style-type: decimal;
+                }
+
+                    .modal-body ol li a {
+                        color: #ffb100;
+                    }
+
+        .disclaimer {
+            background-color: #FFBA22;
         }
 
-        .disclaimer{
-            background-color:#FFBA22;
-        }
-
-        .firebreak_footer_row{
-            margin:auto;
+        .firebreak_footer_row {
+            margin: auto;
         }
     </style>
 
 </head>
 <body>
+    <div id="loader" class="center"></div>
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
             <a class="navbar-brand" href="/Home/Index"><img src="~/images/logo.png" style="width:40px;" />The <span style="color:#FFBA22;">FIREBREAK</span></a>
@@ -102,11 +107,13 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item "><a href="/Home/Index" class="nav-link">Home</a></li>
                     <li class="nav-item"><a href="/Home/SeverityMap" class="nav-link">Severity Map</a></li>
-                    <li class="nav-item"><a href="/Home/Prepare" class="nav-link">Preparation steps</a></li>
+
 
                     <li class="nav-item dropdown">
-                        <a href="/Home/About" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Checklist</a>
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Preparation</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/Home/Prepare" style="color: #000; font-size:14px;">Preparation steps</a>
+                            <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="/Home/GetYourChecklist" style="color: #000; font-size:14px;">Customise checklist</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item " href="/Home/FinalChecklist" style="color: #000; font-size:14px;">Last minute checklist</a>
@@ -133,7 +140,7 @@
                         </li>*@
 
                     <li class="nav-item dropdown">
-                        <a href="/Home/About" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Maps</a>
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Maps</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="/Home/Map" style="color: #000; font-size:14px;">Alerts & Warnings</a>
                             <div class="dropdown-divider"></div>
@@ -147,7 +154,7 @@
 
 
                     <li class="nav-item dropdown">
-                        <a href="/Home/About" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About bushfire</a>
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About bushfire</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item " href="/Home/Timeline" style="color: #000; font-size:14px;">Bushfire timeline</a>
                             <div class="dropdown-divider"></div>
@@ -156,7 +163,7 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a href="/Home/About" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Games</a>
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Games</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="/Home/Game" style="color: #000; font-size:14px;">Emergency kit game</a>
                             <div class="dropdown-divider"></div>
@@ -173,6 +180,7 @@
     </nav>
     <div class="">
         @RenderBody()
+
 
         <footer>
             <div class="container">
@@ -220,14 +228,14 @@
                     </div>
                 </div>
             </div>
-          
-                <p>
-                    &copy; @DateTime.Now.Year - All rights reserved | TheFireBreak Application |
-                    <a class="" href="" style="color:#f7ca44; border:0; font-size:12px;" data-toggle="modal" data-target="#myModal">
-                        Disclaimer
-                    </a>
-                </p>
-            
+
+            <p>
+                &copy; @DateTime.Now.Year - All rights reserved | TheFireBreak Application |
+                <a class="" href="" style="color:#f7ca44; border:0; font-size:12px;" data-toggle="modal" data-target="#myModal">
+                    Disclaimer
+                </a>
+            </p>
+
             <div class="modal" id="myModal">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -263,9 +271,12 @@
         </footer>
     </div>
     @*@Scripts.Render("~/bundles/jquery")*@
+
+
     @Scripts.Render("~/bundles/bootstrap")
 
-  
+
+
     <script src="~/Scripts/aos.js"></script>
 
 
@@ -313,6 +324,21 @@
 
     @*<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>*@
     @RenderSection("scripts", required: false)
+    <script>
+        document.onreadystatechange = function () {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                    "body").style.visibility = "hidden";
+                document.querySelector(
+                    "#loader").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                    "#loader").style.display = "none";
+                document.querySelector(
+                    "body").style.visibility = "visible";
+            }
+        };
+    </script>
 
 </body>
 </html>

@@ -77,7 +77,7 @@
 
     .map-body {
         margin-top: 20px;
-        margin-bottom:20px;
+        margin-bottom: 20px;
         text-align: center;
         background: #ffca55;
         padding: 40px;
@@ -224,6 +224,8 @@
     }
 </style>
 
+
+
 <div class="block-31" style="position: relative;">
     <div class="owl-carousel loop-block-31 ">
         <div class="block-30 block-30-sm item" style="background-image: url('../../images/bg_1.jpg'); background-position: 0% 0px;" data-stellar-background-ratio="0.5">
@@ -267,25 +269,26 @@
                 <p id="sev4" class="hide">Black zone means your area is at high risk of having bushfire incidents with a high severity level. Please prepare yourself to leave early and stay up to date about the emergency situation.</p>
             </div>
             <div class="col-lg-12 risky">
-                <p>Leaving in risky areas?</p>
+                <p>Living in risky areas?</p>
                 <p>Learn about the <a href="/Home/Prepare">preparation steps</a>  for leaving early and staying safe.</p>
             </div>
         </div>
     </div>
 </div>
 
-
-
 <script type="text/javascript" src="~/Scripts/postcode.js"></script>
 <script src="~/Scripts/postcode_name.js"></script>
 <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
 <script src="https://kit.fontawesome.com/57456f662e.js" crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://cdn.rawgit.com/LeaVerou/awesomplete/gh-pages/awesomplete.min.js"></script>
+
 <script type="text/javascript">
 
     var map = L.map("map").setView([-37, 145], 7);
 
     L.tileLayer(
+
+        
         "https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw",
         {
             maxZoom: 18,
@@ -296,6 +299,16 @@
             id: "mapbox.light"
         }
     ).addTo(map);
+
+    var southWest = L.latLng(-39.4, 140),
+    northEast = L.latLng(-33.9, 150.5);
+    var bounds = L.latLngBounds(southWest, northEast);
+
+    map.setMaxBounds(bounds);
+    map.on('drag', function() {
+    map.panInsideBounds(bounds, { animate: false });
+});
+
 
     // control that shows state info on hover
     var info = L.control();
@@ -457,30 +470,7 @@
         return div;
     };
 
-    //legend.onAdd = function (map) {
-    //    var div = L.DomUtil.create("div", "info legend"),
-    //        grades = [0, 1, 5, 7],
-    //        labels = [],
-    //        from,
-    //        to;
-
-    //    for (var i = 0; i < grades.length; i++) {
-    //        from = grades[i];
-    //        to = grades[i + 1];
-
-    //        labels.push(
-    //            '<i style="background:' +
-    //            getColor(from + 0.01) +
-    //            '"></i> ' +
-    //            from +
-    //            (to ? "&ndash;" + to : "+")
-    //        );
-    //    }
-
-    //    div.innerHTML = labels.join("<br>");
-    //    return div;
-    //};
-
+   
     legend.addTo(map);
 
 
@@ -501,4 +491,5 @@
     }
 
 </script>
+
 @Scripts.Render("~/bundles/jquery")
