@@ -1,26 +1,25 @@
-#loader {
-    border: 12px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 12px solid #444444;
-    width: 70px;
-    height: 70px;
-    animation: spin 1s linear infinite;
+body.preloader-site {
+    overflow: hidden;
 }
 
-@keyframes spin {
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-.center {
-    position: absolute;
+.preloader-wrapper {
+    height: 100%;
+    width: 100%;
+    background: #FFF;
+    position: fixed;
     top: 0;
-    bottom: 0;
     left: 0;
-    right: 0;
-    margin: auto;
-}     
+    z-index: 9999999;
+}
+
+    .preloader-wrapper .preloader {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 120px;
+    }   
 
 .page-content {
     width: 100%;

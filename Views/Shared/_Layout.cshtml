@@ -93,9 +93,15 @@
         }
     </style>
 
+
+
 </head>
 <body>
-    <div id="loader" class="center"></div>
+    <div class="preloader-wrapper">
+        <div class="preloader">
+            <img src="~/images/Preloader_1.gif" alt="Loading">
+        </div>
+    </div>
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
             <a class="navbar-brand" href="/Home/Index"><img src="~/images/logo.png" style="width:40px;" />The <span style="color:#FFBA22;">FIREBREAK</span></a>
@@ -178,9 +184,8 @@
             </div>
         </div>
     </nav>
+    @RenderBody()
     <div class="">
-        @RenderBody()
-
 
         <footer>
             <div class="container">
@@ -272,7 +277,6 @@
     </div>
     @*@Scripts.Render("~/bundles/jquery")*@
 
-
     @Scripts.Render("~/bundles/bootstrap")
 
 
@@ -321,24 +325,20 @@
     <script src="~/Scripts/jquery.steps.js"></script>
     <script src="~/Scripts/py.js"></script>
     <script src="~/Scripts/hotspot.js"></script>
+    
 
     @*<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>*@
+    <script type="text/javascript" src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
     @RenderSection("scripts", required: false)
     <script>
-        document.onreadystatechange = function () {
-            if (document.readyState !== "complete") {
-                document.querySelector(
-                    "body").style.visibility = "hidden";
-                document.querySelector(
-                    "#loader").style.visibility = "visible";
-            } else {
-                document.querySelector(
-                    "#loader").style.display = "none";
-                document.querySelector(
-                    "body").style.visibility = "visible";
-            }
-        };
+       $(document).ready(function($) {
+    var Body = $('body');
+    Body.addClass('preloader-site');
+});
+$(window).load(function() {
+    $('.preloader-wrapper').fadeOut();
+    $('body').removeClass('preloader-site');
+});
     </script>
-
 </body>
 </html>

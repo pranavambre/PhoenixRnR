@@ -521,6 +521,7 @@
     <Content Include="images\pet.jpg" />
     <Content Include="images\pets.jpeg" />
     <Content Include="images\plant.png" />
+    <Content Include="images\Preloader_1.gif" />
     <Content Include="images\prepare_hm.png" />
     <Content Include="images\ps4.png" />
     <Content Include="images\quiz-bg.jpg" />
