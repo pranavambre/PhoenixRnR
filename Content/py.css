@@ -2,6 +2,10 @@ body.preloader-site {
     overflow: hidden;
 }
 
+.paginate_button a {
+    color: #6c6c6b;
+}
+
 .preloader-wrapper {
     height: 100%;
     width: 100%;

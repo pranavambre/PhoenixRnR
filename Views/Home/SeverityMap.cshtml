@@ -300,6 +300,7 @@
     var southWest = L.latLng(-39.4, 140),
         northEast = L.latLng(-33.9, 150.5);
     var bounds = L.latLngBounds(southWest, northEast);
+    map._layersMinZoom = 7;
 
     map.setMaxBounds(bounds);
     map.on('drag', function () {

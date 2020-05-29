@@ -5,6 +5,8 @@
     line-height: 1.8;
     font-weight: 300;
     color: #555555;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 /* Set padding to keep content from hitting the edges */
 
